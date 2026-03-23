@@ -30,7 +30,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // === 固定CTA制御 ===
   initFixedCTA();
+
+  // === microCMS連携 ===
+  initMicroCMS();
 });
+
+
+/**
+ * microCMSからデータを取得して画像を反映
+ */
+async function initMicroCMS() {
+  const SERVICE_DOMAIN = 'ryuju-bassay';
+  const API_KEY = 'C19NcMk2pmhiOQDOUG8J6crFYk7WfcHddGsb';
+  const ENDPOINT = 'site-config'; // ユーザーに作成してもらうエンドポイント名
+
+  try {
+    const response = await fetch(`https://${SERVICE_DOMAIN}.microcms.io/api/v1/${ENDPOINT}`, {
+      headers: {
+        'X-MICROCMS-API-KEY': API_KEY
+      }
+    });
+
+    if (!response.ok) {
+      console.warn('microCMS: データの取得に失敗しました。スキーマ設定が未完了の可能性があります。');
+      return;
+    }
+
+    const data = await response.json();
+    
+    // 画像の反映（取得できた場合のみ）
+    if (data.heroImage && data.heroImage.url) {
+      const hero = document.getElementById('hero-section');
+      if (hero) hero.style.backgroundImage = `url(${data.heroImage.url})`;
+    }
+
+    if (data.serviceSpecial && data.serviceSpecial.url) {
+      const img = document.getElementById('cms-img-special');
+      if (img) img.src = data.serviceSpecial.url;
+    }
+
+    if (data.serviceFelling && data.serviceFelling.url) {
+      const img = document.getElementById('cms-img-felling');
+      if (img) img.src = data.serviceFelling.url;
+    }
+
+    if (data.serviceForestry && data.serviceForestry.url) {
+      const img = document.getElementById('cms-img-forestry');
+      if (img) img.src = data.serviceForestry.url;
+    }
+
+    console.log('microCMS: データの反映が完了しました。');
+  } catch (error) {
+    console.error('microCMS連携エラー:', error);
+  }
+}
 
 
 /**
