@@ -298,25 +298,52 @@ function initContactForm() {
       return;
     }
 
-    // 送信アニメーション（実際のバックエンドは未接続）
+    // 送信ボタンの状態更新
     const submitBtn = document.getElementById('submit-btn');
+    const originalBtnText = submitBtn.innerHTML;
     submitBtn.textContent = '送信中...';
     submitBtn.disabled = true;
 
-    setTimeout(() => {
-      // フォームを成功メッセージに置換
-      form.innerHTML = `
-        <div class="form-success">
-          <div class="form-success-icon">✅</div>
-          <h3>送信完了しました</h3>
-          <p>
-            お問い合わせありがとうございます。<br>
-            通常1〜2営業日以内にご返信いたします。<br>
-            しばらくお待ちください。
-          </p>
-        </div>
-      `;
-    }, 1500);
+    // Formspreeへの送信処理
+    const formData = new FormData(form);
+    
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        // フォームを成功メッセージに置換
+        form.innerHTML = `
+          <div class="form-success">
+            <div class="form-success-icon">✅</div>
+            <h3>送信完了しました</h3>
+            <p>
+              お問い合わせありがとうございます。<br>
+              通常1〜2営業日以内にご返信いたします。<br>
+              しばらくお待ちください。
+            </p>
+          </div>
+        `;
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            alert(data["errors"].map(error => error["message"]).join(", "));
+          } else {
+            alert("送信に失敗しました。時間をおいて再度お試しください。");
+          }
+        });
+      }
+    }).catch(error => {
+      alert("通信エラーが発生しました。ネットワーク接続を確認してください。");
+    }).finally(() => {
+      if (submitBtn) {
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.disabled = false;
+      }
+    });
   });
 }
 
