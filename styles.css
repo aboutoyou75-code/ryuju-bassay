@@ -1311,6 +1311,12 @@ textarea {
   font-size: 13px;
 }
 
+.image-note {
+  margin-top: 18px;
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
 .field-note {
   color: var(--ink-soft);
   font-size: 13px;

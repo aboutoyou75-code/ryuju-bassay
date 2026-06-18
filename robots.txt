@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aboutoyou75-code.github.io/ryuju-bassay/sitemap.xml
