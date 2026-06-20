@@ -8,6 +8,22 @@ const SITE_CONFIG = {
 const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
 const phoneHref = SITE_CONFIG.phone ? SITE_CONFIG.phone.replace(/[^\d+]/g, "") : "";
+const MAIL_SUBJECT = "伐採・庭木の見積もり相談";
+const MAIL_BODY_TEMPLATE = [
+  "お名前：",
+  "電話番号：",
+  "作業場所の市町村：",
+  "木の本数：",
+  "木の高さ：",
+  "処分希望：あり・なし",
+  "相談内容：",
+  ""
+].join("\r\n");
+
+const buildMailtoHref = (body = MAIL_BODY_TEMPLATE) => {
+  if (!SITE_CONFIG.email) return "#estimate-form";
+  return `mailto:${SITE_CONFIG.email}?subject=${encodeURIComponent(MAIL_SUBJECT)}&body=${encodeURIComponent(body)}`;
+};
 
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
@@ -44,6 +60,17 @@ document.querySelectorAll("[data-line-link]").forEach((link) => {
   } else {
     link.href = "#estimate-form";
     link.setAttribute("title", "LINE URLをSITE_CONFIGに設定してください");
+  }
+});
+
+document.querySelectorAll("[data-mail-link]").forEach((link) => {
+  if (!(link instanceof HTMLAnchorElement)) return;
+  if (SITE_CONFIG.email) {
+    link.href = buildMailtoHref();
+  } else {
+    link.href = "#estimate-form";
+    link.setAttribute("aria-disabled", "true");
+    link.setAttribute("title", "送信先メールをSITE_CONFIGに設定してください");
   }
 });
 
@@ -130,9 +157,7 @@ if (mailMessageButton instanceof HTMLButtonElement) {
   if (SITE_CONFIG.email) {
     mailMessageButton.addEventListener("click", () => {
       if (!latestConsultationMessage) return;
-      const subject = encodeURIComponent("竜樹伐採への概算見積相談");
-      const body = encodeURIComponent(latestConsultationMessage);
-      window.location.href = `mailto:${SITE_CONFIG.email}?subject=${subject}&body=${body}`;
+      window.location.href = buildMailtoHref(latestConsultationMessage);
     });
   } else {
     mailMessageButton.disabled = true;
