@@ -1,5 +1,9 @@
 \# DESIGN.md — 竜樹伐採 UI Design System
 
+## 2026-10-23 User-approved direction override
+
+The user's request to rebuild with Apple/Google-like clarity supersedes the older dark-background layout prescriptions below. Use a white base, near-black Japanese sans-serif text, one deep-green CTA accent, generous whitespace, restrained 12px photo corners and pill-shaped action buttons. No decorative gradients, giant dark panels, ornamental gold labels, invented proof or product-style effects. Preserve the local specialist positioning, genuine field photographs, 10 core sections, 9 services, 10 FAQs, existing URLs, structured data and SITE_CONFIG destinations. Mobile tap targets remain at least 44px. All 24 pages use design.css; old stylesheets remain as historical assets and are not loaded by current pages. The hero is a centered concise message followed by a wide field photograph. Pricing is a simple readable table on white. Reading and service pages share the same header, typography and contact hierarchy.
+
 
 
 \## 1. Design Goal

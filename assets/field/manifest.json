@@ -1,0 +1,68 @@
+{
+  "rope-work": {
+    "sourceId": "E10",
+    "width": 720,
+    "height": 1280,
+    "bytes": 688350
+  },
+  "cliff-work": {
+    "sourceId": "E08",
+    "width": 1280,
+    "height": 960,
+    "bytes": 550156
+  },
+  "cliff-wide": {
+    "sourceId": "E06",
+    "width": 1280,
+    "height": 720,
+    "bytes": 457508
+  },
+  "forest-work": {
+    "sourceId": "A08",
+    "width": 2880,
+    "height": 3840,
+    "bytes": 761022
+  },
+  "forest-standing": {
+    "sourceId": "A01",
+    "width": 2880,
+    "height": 3840,
+    "bytes": 566044
+  },
+  "tree-by-path": {
+    "sourceId": "B01",
+    "width": 2880,
+    "height": 3840,
+    "bytes": 919102
+  },
+  "cleared-path": {
+    "sourceId": "B02",
+    "width": 2880,
+    "height": 3840,
+    "bytes": 663298
+  },
+  "garden-tree": {
+    "sourceId": "E01",
+    "width": 2880,
+    "height": 3840,
+    "bytes": 668560
+  },
+  "garden-trimmed": {
+    "sourceId": "E02",
+    "width": 2880,
+    "height": 3840,
+    "bytes": 630170
+  },
+  "narrow-yard": {
+    "sourceId": "D01",
+    "width": 960,
+    "height": 1280,
+    "bytes": 327938
+  },
+  "narrow-yard-tidy": {
+    "sourceId": "D02",
+    "width": 2880,
+    "height": 3840,
+    "bytes": 568188
+  }
+}
