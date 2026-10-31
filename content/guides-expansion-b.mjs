@@ -186,5 +186,5 @@ const articles = [
 
 export default articles.map(([slug,summary,answer,sections,checklist,related]) => {
  const {category,title} = roadmap.find(article => article.slug === slug);
- return {slug,category,title,summary,answer,sections,checklist,related,showPhoto:false};
+ return {slug,category,title,summary,answer,sections,checklist,related,showPhoto:false,...(slug==='business-builder'?{headingParts:['工務店・解体業者と','伐採の工程を合わせる','ときの確認事項']}:{})};
 });
