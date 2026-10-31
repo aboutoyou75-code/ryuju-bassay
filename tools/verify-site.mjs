@@ -1,5 +1,6 @@
 import {readFile,stat} from 'node:fs/promises';
 import {resolve,dirname} from 'node:path';
+import guides from '../content/guides.mjs';
 const root=process.cwd();
 const base='https://aboutoyou75-code.github.io/ryuju-bassay/';
 const sitemap=await readFile('sitemap.xml','utf8');
@@ -31,7 +32,8 @@ for(const url of urls){
   if(hash && file.endsWith('.html')){const targetHtml=await readFile(file,'utf8');check(targetHtml.includes('id="'+hash+'"'),path+': fragment '+link);}
  }
 }
-check(urls.length===28,'28 sitemap URLs: home, ten service pages, guide index, fifteen guides and one case');
+check(urls.length===guides.length+13,'sitemap: home, ten service pages, guide index, general guides and one case');
+check(new Set(urls).size===urls.length,'sitemap has no duplicate URLs');
 check(robots.includes('Allow: /')&&robots.includes('sitemap.xml'),'robots: sitemap and crawl rule');
 const home=pages.get('index.html');
 const faqSection=home.match(/<section\b[^>]*id="faq"[^>]*>([\s\S]*?)<\/section>/)?.[1] || '';

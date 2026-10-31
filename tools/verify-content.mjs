@@ -2,11 +2,15 @@
 // distinct substantive content, and link to real contact/service destinations.
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
+import guides from '../content/guides.mjs';
 const failures=[]; let checks=0;
 const check=(ok,label)=>{checks++;if(!ok)failures.push(label);};
 const home=await readFile('index.html','utf8');
 const sitemap=await readFile('sitemap.xml','utf8');
-const expected=['photo-estimate','tree-disposal','stump-removal','narrow-access','bamboo-clearing','slope-work','special-felling','vacant-house-remote','before-demolition','estimate-checklist','typhoon-preparation','temple-trees','single-tree-cost','pruning-or-removal','booking-timing'];
+const expected=guides.map(g=>g.slug);
+check(expected.length===100,'100 general guides, case counted separately');
+check(new Set(expected).size===100,'100 unique guide URLs');
+check(new Set(guides.map(g=>g.title)).size===100,'100 unique titles');
 let hub='';try{hub=await readFile('guides/index.html','utf8');}catch{}
 check(home.includes('href="guides/"'),'home reaches guide index');
 const bodies=[];

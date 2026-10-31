@@ -1,4 +1,7 @@
 import inquiryGuides from './guides-inquiry.mjs';
+import expansionA from './guides-expansion-a.mjs';
+import expansionB from './guides-expansion-b.mjs';
+import expansionC from './guides-expansion-c.mjs';
 export default [
   {
     "slug": "photo-estimate",
@@ -476,4 +479,4 @@ export default [
     ],
     "showPhoto": false
   }
-].concat(inquiryGuides);
+].concat(inquiryGuides, expansionA, expansionB, expansionC);
