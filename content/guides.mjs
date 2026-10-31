@@ -1,3 +1,4 @@
+import inquiryGuides from './guides-inquiry.mjs';
 export default [
   {
     "slug": "photo-estimate",
@@ -475,4 +476,4 @@ export default [
     ],
     "showPhoto": false
   }
-];
+].concat(inquiryGuides);
