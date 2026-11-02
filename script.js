@@ -1,9 +1,30 @@
 const SITE_CONFIG = {
-  // 本番公開前に電話番号、LINE URL、送信先メールを設定してください。
+  // 変更する際はHTML側のフォールバックURLも同時に更新してください。
   phone: "090-2014-7439",
   lineUrl: "https://lin.ee/thISnveh",
   email: "ryuzyuchop@gmail.com"
 };
+
+
+// GA4 / GTMを運用側で有効化した場合にのみ、個人情報を含まない操作イベントを送ります。
+// LINE/メールを開いた操作は、問い合わせ成立とは異なります。
+const trackInteraction = (eventName, method = "") => {
+  const eventParams = { contact_method: method };
+  if (typeof window.gtag === "function") {
+    window.gtag("event", eventName, eventParams);
+  } else if (Array.isArray(window.dataLayer)) {
+    window.dataLayer.push({ event: eventName, ...eventParams });
+  }
+};
+
+document.addEventListener("click", (event) => {
+  if (!(event.target instanceof Element)) return;
+  const link = event.target.closest("a[data-line-link],a[data-phone-link],a[data-mail-link]");
+  if (!link) return;
+  const method = link.hasAttribute("data-line-link") ? "line" :
+    link.hasAttribute("data-phone-link") ? "phone" : "email";
+  trackInteraction("contact_intent", method);
+});
 
 const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
@@ -14,6 +35,15 @@ if (navToggle && nav) {
     const isOpen = nav.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
     document.body.classList.toggle("nav-open", isOpen);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && nav.classList.contains("is-open")) {
+      nav.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("nav-open");
+      navToggle.focus();
+    }
   });
 
   nav.addEventListener("click", (event) => {
@@ -99,6 +129,7 @@ if (form instanceof HTMLFormElement) {
     event.preventDefault();
     const data = new FormData(form);
     latestConsultationMessage = buildConsultationMessage(data);
+    trackInteraction("consultation_draft_created", "form");
 
     if (messageOutput instanceof HTMLTextAreaElement) {
       messageOutput.value = latestConsultationMessage;
@@ -106,7 +137,8 @@ if (form instanceof HTMLFormElement) {
 
     if (resultPanel instanceof HTMLElement) {
       resultPanel.hidden = false;
-      resultPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      resultPanel.focus({ preventScroll: true });
+      resultPanel.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "nearest" });
     }
   });
 }
@@ -132,6 +164,7 @@ if (mailMessageButton instanceof HTMLButtonElement) {
       if (!latestConsultationMessage) return;
       const subject = encodeURIComponent("竜樹伐採への概算見積相談");
       const body = encodeURIComponent(latestConsultationMessage);
+      trackInteraction("contact_intent", "email");
       window.location.href = `mailto:${SITE_CONFIG.email}?subject=${subject}&body=${body}`;
     });
   } else {
