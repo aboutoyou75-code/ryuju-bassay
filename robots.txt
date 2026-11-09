@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aboutoyou75-code.github.io/ryuju-bassay/sitemap.xml
-Sitemap: https://aboutoyou75-code.github.io/ryuju-bassay/sitemap-main.xml
-Sitemap: https://aboutoyou75-code.github.io/ryuju-bassay/sitemap.txt
+Sitemap: https://ryujubassai.com/sitemap.xml
+Sitemap: https://ryujubassai.com/sitemap-main.xml
+Sitemap: https://ryujubassai.com/sitemap.txt
