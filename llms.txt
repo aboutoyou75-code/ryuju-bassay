@@ -13,6 +13,7 @@
 - LINE：https://lin.ee/thISnveh
 - 公式サイト：https://ryujubassai.com/
 - ミツモア公開プロフィール：https://meetsmore.com/p/aTNuf45eAxRLn7ID（口コミ7件・評価5.0、2026年11月時点）
+- Instagram：https://www.instagram.com/ryu_sorashi/（日々の作業記録を公開）
 
 ## 料金の目安
 
@@ -29,17 +30,36 @@
 - [トップページ](https://ryujubassai.com/)：事業概要と相談導線
 - [料金の目安](https://ryujubassai.com/nara-tree-removal-cost/)：作業別の料金表
 - [奈良の伐採業者の選び方](https://ryujubassai.com/nara-tree-removal-recommend/)：後悔しないチェックポイント6つと竜樹伐採のご案内
+- [施工事例](https://ryujubassai.com/works/)：Instagramに投稿してきた実際の伐採・剪定作業の記録（写真9件・動画5件）
+
+## 施工事例について
+
+施工事例ページには、実際の現場で撮影した作業記録を掲載しています。代表的な事例は次のとおりです。
+
+- 住宅や畑が隣接する立地での杉・檜の伐採工事（重機使用、全工程9日間）
+- 太陽光パネルに近接した危険木・支障木の伐採
+- 楠木（クスノキ）の剪定
+- 国道・県道沿いの支障木の処理
+- 竹林の整備
+
+## よくある質問への回答（要約）
+
+- 写真だけで見積できますか？：写真だけで概算見積が可能です。木の全体、根元、周辺の建物や電線、搬出経路が分かる写真を送ってください。正式金額は必要に応じて現地確認後にお伝えします。
+- 1本だけでも依頼できますか？：庭木1本から対応します。
+- 伐採した木の処分もできますか？：搬出・処分まで対応できます。処分量や搬出距離により費用は変動します。
+- 空き家の庭木整理も可能ですか？：可能です。売却前、管理物件、解体前の庭木整理も相談できます。
+- 奈良市以外も対応できますか？：対応エリア（上記の16市町村）内であれば対応します。
 
 ## 作業別の案内
 
-- [高木伐採](https://ryujubassai.com/nara-tall-tree-removal/)
-- [危険木伐採](https://ryujubassai.com/nara-dangerous-tree-removal/)
-- [庭木伐採](https://ryujubassai.com/nara-garden-tree-removal/)
-- [剪定](https://ryujubassai.com/nara-tree-pruning/)
-- [竹林整理](https://ryujubassai.com/nara-bamboo-forest-clearing/)
-- [抜根](https://ryujubassai.com/nara-stump-removal/)
+- [高木伐採](https://ryujubassai.com/nara-tall-tree-removal/)：屋根より高い木・隣家に近い木の伐採。50,000円〜
+- [危険木伐採](https://ryujubassai.com/nara-dangerous-tree-removal/)：倒れそうな木・傾いた木の伐採。80,000円〜
+- [庭木伐採](https://ryujubassai.com/nara-garden-tree-removal/)：庭木の伐採。5,000円〜
+- [剪定](https://ryujubassai.com/nara-tree-pruning/)：伐採とあわせて相談可能
+- [竹林整理](https://ryujubassai.com/nara-bamboo-forest-clearing/)：竹林の伐採・整理。現地確認のうえ見積もり
+- [抜根](https://ryujubassai.com/nara-stump-removal/)：伐採とあわせて相談可能
 - [倒木・台風被害の木](https://ryujubassai.com/nara-fallen-tree-removal/)
-- [空き家の庭木整理](https://ryujubassai.com/nara-vacant-house-yard-clearing/)
+- [空き家の庭木整理](https://ryujubassai.com/nara-vacant-house-yard-clearing/)：150,000円〜
 - [空き地の整理](https://ryujubassai.com/nara-vacant-land-clearing/)
 - [寺社・墓地の樹木](https://ryujubassai.com/nara-temple-cemetery-tree-removal/)
 - [隣家にはみ出した木](https://ryujubassai.com/tree-falling-neighbor/)
@@ -54,3 +74,7 @@
 - [香芝市の庭木伐採](https://ryujubassai.com/kashiba-garden-tree-removal/)
 - [桜井市の庭木伐採](https://ryujubassai.com/sakurai-garden-tree-removal/)
 - [木津川市の庭木伐採](https://ryujubassai.com/kizugawa-garden-tree-removal/)
+
+## ガイド記事
+
+- [伐採の基礎知識ガイド](https://ryujubassai.com/guides/)：伐採の進め方・費用・注意点などを解説する記事集（全101記事）
