@@ -190,3 +190,21 @@ if (copyPhoneButton instanceof HTMLButtonElement) {
     copyPhoneButton.setAttribute("title", "電話番号をSITE_CONFIGに設定してください");
   }
 }
+
+
+// Google アナリティクス（GA4）[竜樹伐採 公式サイト]
+// 測定 ID: G-B3BPZ2SNN5
+(function () {
+  var GA_MEASUREMENT_ID = "G-B3BPZ2SNN5";
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  window.gtag = window.gtag || gtag;
+  gtag("js", new Date());
+  gtag("config", GA_MEASUREMENT_ID);
+  var script = document.createElement("script");
+  script.async = true;
+  script.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_MEASUREMENT_ID;
+  document.head.appendChild(script);
+})();
