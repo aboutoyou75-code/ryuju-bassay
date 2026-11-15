@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>伐採 ― 終｜竜樹伐採</title>
+<meta name="description" content="奈良市の伐採は竜樹伐採へ。三つの仕事の第三章「終」。倒す方向と搬出の方法を先に決めてから行う伐採について、段取りと料金の目安をご案内します。">
+<link rel="canonical" href="https://ryujubassai.com/tree-felling/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="伐採 ― 終｜竜樹伐採">
+<meta property="og:description" content="奈良市の伐採は竜樹伐採へ。三つの仕事の第三章「終」。倒す方向と搬出の方法を先に決めてから行う伐採について、段取りと料金の目安をご案内します。">
+<meta property="og:url" content="https://ryujubassai.com/tree-felling/">
+<meta property="og:image" content="https://ryujubassai.com/assets/chapters/forest.webp">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="竜樹伐採">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;400;500;600;700&family=Zen+Old+Mincho:wght@400;700;900&display=swap" rel="stylesheet" />
+    <style>
+      :root{
+        --paper:#f4efe3;
+        --paper-2:#eae1cd;
+        --ink:#24211a;
+        --ink-soft:#57503f;
+        --line:#c8bda0;
+        --earth:#4c3a26;
+        --earth-deep:#171208;
+        --bark:#8a6a44;
+        --moss:#5c6b3c;
+        --accent:#a4442c;
+        --line-green:#06c755;
+        --card:#faf7ee;
+        --shadow:0 18px 40px rgba(35,26,12,.18);
+        --serif:"Zen Old Mincho","Hiragino Mincho ProN","Hiragino Mincho Pro","YuMincho","Yu Mincho","MS PMincho",serif;
+        --sans:"IBM Plex Sans JP","Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic",sans-serif;
+      }
+      @media (prefers-color-scheme: dark){
+        :root{
+          --paper:#171410;
+          --paper-2:#1e1a13;
+          --ink:#ece6d4;
+          --ink-soft:#b3ab94;
+          --line:#3d362a;
+          --earth:#c9a878;
+          --card:#201b13;
+          --shadow:0 18px 40px rgba(0,0,0,.5);
+        }
+      }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+      body{
+        margin:0;background:var(--paper);color:var(--ink);
+        font-family:var(--sans);font-size:16px;line-height:1.9;font-weight:400;
+        letter-spacing:.025em;
+        font-feature-settings:"palt" 1,"kern" 1,"liga" 1;
+        text-rendering:optimizeLegibility;
+        -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+        font-optical-sizing:auto;
+      }
+      h1,h2,h3,.tel-big,.chap .kanji{font-feature-settings:"palt" 1,"kern" 1;letter-spacing:.045em}
+      p,li,dd{font-feature-settings:"palt" 1,"kern" 1}
+      img{display:block;max-width:100%}
+      a{color:inherit}
+      .brand-name{white-space:nowrap}
+      .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+      /* ---------- top bar ---------- */
+      .topbar{
+        position:fixed;inset:0 0 auto 0;z-index:60;
+        display:flex;align-items:center;gap:14px;
+        padding:10px 16px;
+        background:color-mix(in srgb, var(--paper) 88%, transparent);
+        backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+        border-bottom:1px solid var(--line);
+      }
+      .topbar .brand{font-family:var(--serif);font-weight:900;font-size:17.5px;letter-spacing:.18em;text-decoration:none;white-space:nowrap}
+      .topbar .brand small{display:block;font-family:var(--sans);font-weight:500;font-size:10px;letter-spacing:.3em;color:var(--ink-soft)}
+      .topbar nav{margin-left:auto;display:none;gap:4px}
+      .topbar nav a{
+        text-decoration:none;font-size:13px;font-weight:500;padding:10px 10px;min-height:40px;
+        display:inline-flex;align-items:center;color:var(--ink-soft);
+      }
+      .topbar nav a:hover{color:var(--ink)}
+      .top-actions{display:flex;gap:8px;margin-left:auto}
+      .topbar nav + .top-actions{margin-left:0}
+      .btn{
+        display:inline-flex;align-items:center;justify-content:center;gap:8px;
+        min-height:44px;padding:10px 18px;border-radius:999px;
+        font-family:var(--sans);font-weight:700;font-size:14px;text-decoration:none;
+        border:1px solid transparent;cursor:pointer;white-space:nowrap;
+      }
+      .btn-tel{background:var(--earth-deep);color:#f2eee0}
+      .btn-line{background:var(--line-green);color:#fff}
+      .btn svg{width:17px;height:17px;flex:none}
+      @media (min-width:860px){ .topbar nav{display:flex} .topbar{padding:10px 28px} }
+      @media (max-width:560px){
+        .topbar{gap:8px;padding:8px 12px}
+        .topbar .brand{font-size:15.5px;letter-spacing:.1em}
+        .topbar .brand small{display:none}
+        .top-actions{gap:6px;flex:none}
+        .topbar .btn{padding:8px 12px;font-size:13px;min-height:40px;gap:6px}
+        .topbar .btn svg{width:15px;height:15px}
+      }
+      @media (max-width:380px){
+        .topbar .brand{font-size:14.5px;letter-spacing:.06em}
+        .topbar .btn{padding:8px 10px}
+      }
+
+      /* ---------- phase rail ---------- */
+      .rail{
+        position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:55;
+        display:none;flex-direction:column;align-items:center;gap:10px;
+      }
+      @media (min-width:900px){ .rail{display:flex} }
+      .rail .track{width:2px;height:180px;background:var(--line);position:relative;border-radius:2px}
+      .rail .fill{position:absolute;left:0;top:0;width:100%;background:var(--earth);border-radius:2px}
+      .rail .dot{position:absolute;left:50%;width:11px;height:11px;border-radius:50%;background:var(--earth);transform:translate(-50%,-50%);border:2px solid var(--paper)}
+      .rail .val{writing-mode:vertical-rl;font-size:12px;letter-spacing:.18em;color:var(--ink-soft)}
+      .rail .val b{font-size:15px;color:var(--ink);letter-spacing:.05em}
+      .rail .zone{writing-mode:vertical-rl;font-size:11px;letter-spacing:.34em;color:var(--earth);font-weight:700}
+      .phase-chip{
+        position:fixed;right:12px;bottom:86px;z-index:55;
+        background:var(--earth-deep);color:#efe9d6;border-radius:10px;
+        padding:7px 12px;font-size:12px;letter-spacing:.08em;
+        display:flex;gap:8px;align-items:baseline;box-shadow:var(--shadow);
+      }
+      .phase-chip b{font-size:15px;font-family:var(--serif)}
+      .phase-chip{transition:opacity .3s ease}
+      .phase-chip.hide{opacity:0;pointer-events:none}
+      @media (min-width:900px){ .phase-chip{display:none} }
+
+      /* ---------- hero ---------- */
+      .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--earth-deep)}
+      .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+      .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(16,11,4,.42) 0%,rgba(16,11,4,0) 30%),linear-gradient(to top,rgba(16,11,4,.9) 0%,rgba(16,11,4,.55) 46%,rgba(16,11,4,.30) 74%,rgba(16,11,4,.22) 100%)}
+      .hero .big-end{
+        position:absolute;top:64px;right:5vw;z-index:2;
+        font-family:var(--serif);font-weight:900;color:rgba(255,255,255,.94);
+        writing-mode:vertical-rl;font-size:clamp(84px,15vw,168px);line-height:1.1;
+        text-shadow:0 2px 10px rgba(0,0,0,.55),0 4px 30px rgba(0,0,0,.5);letter-spacing:.02em;
+      }
+      @media (max-width:560px){ .hero .big-end{top:76px} }
+      .hero .big-end span{display:block;font-size:.17em;letter-spacing:.38em;margin-top:12px;color:rgba(255,255,255,.78)}
+      .hero-inner{position:relative;z-index:3;width:100%;max-width:1080px;margin:0 auto;padding:120px 20px 56px;color:#f4efe0}
+      .hero .chapter-tag{
+        display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.32em;font-weight:700;
+        border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:7px 14px;margin-bottom:22px;
+        background:rgba(16,11,4,.38);text-shadow:0 1px 6px rgba(0,0,0,.5);
+      }
+      .hero h1{
+        font-family:var(--serif);font-weight:900;
+        font-size:clamp(29px,6.2vw,52px);line-height:1.55;margin:0 0 18px;letter-spacing:.05em;
+        text-shadow:0 2px 12px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.6);
+      }
+      .hero h1 .u{border-bottom:3px solid var(--accent);padding-bottom:2px}
+      .hero p.lead{max-width:34em;font-size:clamp(14px,2.4vw,16.5px);line-height:2;margin:0 0 28px;color:#e8e2cd;text-shadow:0 1px 8px rgba(0,0,0,.6),0 1px 2px rgba(0,0,0,.65)}
+      .hero-cta{display:flex;flex-wrap:wrap;gap:10px}
+      .hero .scroll-hint{
+        margin-top:38px;font-size:11px;letter-spacing:.3em;color:rgba(255,255,255,.65);
+        display:flex;align-items:center;gap:12px;
+      }
+      .hero .scroll-hint::after{content:"";width:56px;height:1px;background:rgba(255,255,255,.5)}
+      .hero .side-note{position:absolute;z-index:3;left:20px;top:96px;color:rgba(255,255,255,.92);font-size:12px;letter-spacing:.22em;writing-mode:vertical-rl;text-shadow:0 1px 8px rgba(0,0,0,.65),0 1px 2px rgba(0,0,0,.6)}
+      @media (min-width:860px){ .hero .side-note{left:34px} }
+
+      /* ---------- toc ---------- */
+      section[id], #faq{scroll-margin-top:84px}
+      .toc-section{padding:56px 0 8px}
+      .toc-card{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:28px 24px 24px}
+      @media (min-width:820px){ .toc-card{padding:34px 36px 30px} }
+      .toc-title{font-family:var(--serif);font-weight:900;font-size:22px;line-height:1.5;margin:0 0 8px;letter-spacing:.06em;display:flex;align-items:center;gap:14px}
+      .toc-title::after{content:"";flex:1;height:1px;background:var(--line)}
+      .toc-lead{margin:0 0 20px;color:var(--ink-soft);font-size:14.5px;max-width:44em}
+      .toc-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+      @media (min-width:820px){ .toc-list{grid-template-columns:1fr 1fr;column-gap:36px} }
+      .toc-list li{border-bottom:1px solid var(--line)}
+      .toc-list li:last-child{border-bottom:none}
+      @media (min-width:820px){ .toc-list li:nth-last-child(2){border-bottom:none} }
+      .toc-list a{
+        display:flex;align-items:center;gap:14px;min-height:52px;padding:10px 4px;
+        text-decoration:none;font-family:var(--serif);font-weight:700;font-size:16px;line-height:1.5;
+      }
+      .toc-list a:hover{color:var(--earth)}
+      .toc-list .toc-no{font-family:var(--serif);font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--earth);flex:none;min-width:2.6em}
+      .toc-list .toc-arrow{margin-left:auto;color:var(--earth);font-size:18px;line-height:1;flex:none}
+
+      /* ---------- sections ---------- */
+      section{padding:84px 0}
+      .sec-head{margin-bottom:40px}
+      .sec-head .no{
+        font-family:var(--serif);font-size:13px;letter-spacing:.3em;color:var(--earth);font-weight:700;
+        display:flex;align-items:center;gap:14px;margin-bottom:14px;
+      }
+      .sec-head .no::after{content:"";flex:0 0 44px;height:1px;background:var(--earth)}
+      .sec-head h2{font-family:var(--serif);font-weight:900;font-size:clamp(24px,4.6vw,34px);line-height:1.55;margin:0 0 12px;letter-spacing:.05em}
+      .sec-head p{color:var(--ink-soft);max-width:40em;margin:0}
+      .tag-chip{
+        display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--earth);
+        border:1px solid var(--line);border-radius:6px;padding:2px 9px;margin-bottom:12px;background:var(--card);
+      }
+
+      .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+      .reveal.in{opacity:1;transform:none}
+      @media (prefers-reduced-motion: reduce){ .reveal{opacity:1;transform:none;transition:none} }
+
+      /* work steps */
+      .work-list{display:grid;gap:56px}
+      .work{display:grid;gap:20px;align-items:center}
+      @media (min-width:820px){
+        .work{grid-template-columns:1.15fr 1fr;gap:44px}
+        .work:nth-child(even){grid-template-columns:1fr 1.15fr}
+        .work:nth-child(even) .work-photo{order:2}
+      }
+      .work-photo{border-radius:6px;overflow:hidden;box-shadow:var(--shadow)}
+      .work-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+      .work-photo.tall img{aspect-ratio:3/4}
+      .work h3{font-family:var(--serif);font-size:clamp(21px,3.6vw,27px);font-weight:700;margin:0 0 10px;line-height:1.5}
+      .work h3 .step-no{color:var(--accent);font-size:.62em;letter-spacing:.2em;display:block;margin-bottom:6px;font-family:var(--sans);font-weight:700}
+      .work p{margin:0;color:var(--ink-soft)}
+      .work p + p{margin-top:10px}
+      figure.photo-block{margin:0}
+      figure.photo-block figcaption{font-size:12.5px;color:var(--ink-soft);padding-top:10px}
+
+      /* situations */
+      .bg-band{background:var(--paper-2)}
+      .sit-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+      .sit-list li{
+        display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:baseline;
+        padding:20px 4px;border-bottom:1px solid var(--line);
+      }
+      .sit-list .n{font-family:var(--serif);color:var(--earth);font-weight:700;font-size:15px;letter-spacing:.1em}
+      .sit-list h3{font-family:var(--serif);font-size:19px;margin:0;font-weight:700}
+      .sit-list p{grid-column:2;margin:0;color:var(--ink-soft);font-size:14.5px}
+      @media (min-width:820px){ .sit-list p{font-size:15px} }
+
+      /* day timeline */
+      .timeline{position:relative;margin-top:8px}
+      .timeline .line-v{position:absolute;left:19px;top:8px;bottom:8px;width:2px;background:var(--line);border-radius:2px;overflow:hidden}
+      .timeline .line-v i{display:block;width:100%;height:100%;background:var(--earth);transform-origin:top;transform:scaleY(0)}
+      .dstep{position:relative;padding:0 0 34px 58px}
+      .dstep:last-child{padding-bottom:4px}
+      .dstep .pin{
+        position:absolute;left:0;top:2px;width:40px;height:40px;border-radius:50%;
+        background:var(--paper);border:2px solid var(--earth);color:var(--earth);
+        display:flex;align-items:center;justify-content:center;
+        font-family:var(--serif);font-weight:700;font-size:13px;
+      }
+      .dstep.ground .pin{background:var(--moss);border-color:var(--moss);color:#fff}
+      .dstep h3{font-family:var(--serif);margin:0 0 4px;font-size:19px;font-weight:700}
+      .dstep p{margin:0;color:var(--ink-soft);max-width:38em}
+      .wide-photo{margin-top:26px;border-radius:6px;overflow:hidden;box-shadow:var(--shadow)}
+      .wide-photo img{width:100%;aspect-ratio:16/9;object-fit:cover}
+
+      /* price */
+      .price-table{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card)}
+      .price-table .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 22px;border-bottom:1px solid var(--line)}
+      .price-table .row:last-child{border-bottom:none}
+      .price-table .item{font-family:var(--serif);font-weight:700;font-size:16.5px}
+      .price-table .item small{display:block;font-family:var(--sans);font-weight:400;font-size:12.5px;color:var(--ink-soft);margin-top:2px}
+      .price-table .amt{font-family:var(--serif);font-weight:700;font-size:19px;white-space:nowrap}
+      .price-table .amt small{font-size:12px;color:var(--ink-soft);font-family:var(--sans);font-weight:500}
+      .factors{display:grid;gap:14px;margin-top:26px}
+      @media (min-width:820px){ .factors{grid-template-columns:1fr 1fr} }
+      .factor{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px 24px}
+      .factor h3{font-family:var(--serif);margin:0 0 8px;font-size:18px;font-weight:700}
+      .factor p{margin:0;color:var(--ink-soft);font-size:14.5px}
+      .price-note{margin-top:22px;border-left:3px solid var(--accent);padding:6px 0 6px 18px;max-width:44em}
+      .price-note p{margin:0}
+
+      /* flow */
+      .flow{display:grid;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card)}
+      @media (min-width:820px){ .flow{grid-template-columns:repeat(4,1fr)} }
+      .flow .f{padding:24px 22px;border-bottom:1px solid var(--line)}
+      .flow .f:last-child{border-bottom:none}
+      @media (min-width:820px){ .flow .f{border-bottom:none;border-right:1px solid var(--line)} .flow .f:last-child{border-right:none} }
+      .flow .f .k{font-family:var(--serif);color:var(--earth);font-weight:700;font-size:13px;letter-spacing:.24em;display:block;margin-bottom:8px}
+      .flow .f h3{font-family:var(--serif);margin:0 0 6px;font-size:17px}
+      .flow .f p{margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.8}
+
+      /* faq */
+      .faq details{border-bottom:1px solid var(--line)}
+      .faq details:first-of-type{border-top:1px solid var(--line)}
+      .faq summary{
+        cursor:pointer;list-style:none;display:flex;align-items:center;gap:14px;
+        padding:20px 6px;min-height:56px;font-family:var(--serif);font-weight:700;font-size:16.5px;
+      }
+      .faq summary::-webkit-details-marker{display:none}
+      .faq summary .q{color:var(--earth);font-family:var(--serif)}
+      .faq summary .plus{margin-left:auto;color:var(--earth);font-size:20px;line-height:1;transition:transform .3s;flex:none}
+      .faq details[open ] summary .plus{transform:rotate(45deg)}
+      .faq .a{padding:0 6px 22px 34px;color:var(--ink-soft);max-width:44em}
+      .faq .a p{margin:0}
+
+      /* three chapters nav */
+      .chapters{display:grid;gap:14px}
+      @media (min-width:820px){ .chapters{grid-template-columns:repeat(3,1fr)} }
+      .chap{
+        border:1px solid var(--line);border-radius:10px;padding:28px 24px;background:var(--card);
+        text-decoration:none;display:block;position:relative;overflow:hidden;
+      }
+      .chap .kanji{font-family:var(--serif);font-size:64px;line-height:1;font-weight:900;color:var(--earth)}
+      .chap h3{font-family:var(--serif);margin:14px 0 6px;font-size:20px}
+      .chap p{margin:0;font-size:14px;color:var(--ink-soft)}
+      .chap .state{position:absolute;top:18px;right:18px;font-size:11px;font-weight:700;letter-spacing:.16em;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--ink-soft)}
+      .chap.current{border-color:var(--earth);background:linear-gradient(160deg,var(--card),var(--paper-2))}
+      .chap.current .state{background:var(--earth);border-color:var(--earth);color:#fff}
+      .chap.dim{opacity:.8}
+
+      /* contact */
+      .contact{background:var(--earth-deep);color:#ece5cf}
+      .contact .sec-head .no{color:#cdbd97}
+      .contact .sec-head .no::after{background:#cdbd97}
+      .contact .sec-head p{color:#c6bda1}
+      .contact h2{color:#f4efe0}
+      .contact-grid{display:grid;gap:26px}
+      @media (min-width:820px){ .contact-grid{grid-template-columns:1.2fr 1fr;gap:48px;align-items:start} }
+      .tel-big{font-family:var(--sans);font-size:clamp(27px,7.4vw,44px);font-weight:600;letter-spacing:.04em;font-feature-settings:"tnum" 1,"palt" 1;text-decoration:none;display:inline-block;margin:6px 0 4px;white-space:nowrap}
+      .tel-note{color:#c6bda1;font-size:13.5px;margin:0 0 22px}
+      .contact .btn{min-height:52px;padding:12px 24px;font-size:15px}
+      .contact-actions{display:flex;flex-wrap:wrap;gap:10px}
+      .contact-photo{border-radius:6px;overflow:hidden}
+      .contact-photo img{width:100%;aspect-ratio:3/4;object-fit:cover}
+
+      footer{padding:34px 0 110px;border-top:1px solid var(--line)}
+      @media (min-width:900px){ footer{padding-bottom:40px} }
+      footer .fbrand{font-family:var(--serif);font-weight:900;letter-spacing:.16em;font-size:16px}
+      footer p{color:var(--ink-soft);font-size:13px;margin:6px 0 0}
+      footer 
+
+      /* mobile sticky contact */
+      .sticky-cta{
+        position:fixed;left:0;right:0;bottom:0;z-index:60;
+        display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+        background:color-mix(in srgb, var(--paper) 92%, transparent);
+        backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+        border-top:1px solid var(--line);
+      }
+      .sticky-cta .btn{flex:1;min-height:48px}
+      @media (min-width:900px){ .sticky-cta{display:none} }
+
+      .toast{
+        position:fixed;left:50%;bottom:96px;transform:translate(-50%,16px);z-index:80;
+        background:var(--earth-deep);color:#f0ecd9;font-size:13.5px;line-height:1.7;
+        padding:14px 18px;border-radius:10px;max-width:min(92vw,430px);
+        opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;box-shadow:var(--shadow);
+      }
+      .toast.show{opacity:1;transform:translate(-50%,0)}
+      @media (min-width:900px){ .toast{bottom:40px} }
+    </style>
+  </head>
+  <body>
+
+    <header class="topbar">
+      <a class="brand" href="/"><span class="brand-name">竜樹伐採</span><small>RYUJU BASSAI ・ NARA</small></a>
+      <nav aria-label="ページ内メニュー">
+        <a href="#about">伐採とは</a>
+        <a href="#cases">こんな場所</a>
+        <a href="#steps">当日の段取り</a>
+        <a href="#price">料金の目安</a>
+        <a href="#flow">相談から完了まで</a>
+        <a href="#faq">よくある質問</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <div class="top-actions">
+        <a class="btn btn-line" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener" aria-label="LINEで相談">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 11.2c0-4.9-4.3-8.9-9.6-8.9S2.4 6.3 2.4 11.2c0 4.4 3.9 8.1 9.1 8.8.4 0 .9.2 1 .6l.4 2.3c.1.4.4.5.8.2l3.5-2.8c.2-.1.3-.2.5-.3 2.4-1.6 3.9-4 3.9-6.8ZM8.3 14.6H5.6c-.3 0-.6-.3-.6-.6V9.9c0-.3.3-.6.6-.6h.6c.3 0 .6.3.6.6v3.9h1.5c.3 0 .6.3.6.6s-.3.2-.6.2Zm2.3-.6c0 .3-.3.6-.6.6h-.6c-.3 0-.6-.3-.6-.6V9.9c0-.3.3-.6.6-.6h.6c.3 0 .6.3.6.6V14Zm5.4 0c0 .3-.2.5-.5.5-.2 0-.3-.1-.4-.2l-2.4-2.9V14c0 .3-.3.6-.6.6h-.6c-.3 0-.6-.3-.6-.6V9.9c0-.3.3-.6.6-.6h.6c.2 0 .4.1.5.2l2.4 2.9V9.9c0-.3.3-.6.6-.6h.6c.3 0 .6.3.6.6V14Zm3.4-3.4c.3 0 .6.3.6.6s-.3.6-.6.6h-1.7v.8h1.7c.3 0 .6.3.6.6s-.3.6-.6.6h-2.3c-.3 0-.6-.3-.6-.6V9.9c0-.3.3-.6.6-.6h2.3c.3 0 .6.3.6.6s-.3.6-.6.6h-1.7v.1h1.7Z"/></svg>
+          LINEで相談
+        </a>
+        <a class="btn btn-tel" href="tel:09020147439">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.9.7a2 2 0 0 1 1.6 2Z"/></svg>
+          電話する
+        </a>
+      </div>
+    </header>
+
+    <!-- phase rail -->
+    <div class="rail" aria-hidden="true">
+      <div class="zone" id="railZone">立木</div>
+      <div class="track"><div class="fill" id="railFill" style="height:0%"></div><div class="dot" id="railDot" style="top:0%"></div></div>
+      <div class="val">作業の進み具合 <b id="railPhase">立木</b></div>
+    </div>
+    <div class="phase-chip" aria-hidden="true"><span>いま</span><b id="chipPhase">立木</b><span>の章です</span></div>
+
+    <!-- hero -->
+    <div class="hero" id="top">
+      <img class="bg" src="../assets/chapters/forest.webp" alt="杉林の伐採現場。倒した幹が地面に並び、重機が入って作業が進んでいます" />
+      <div class="side-note">伐採 ― 終の章</div>
+      <div class="big-end" aria-hidden="true">終<span>伐採の章</span></div>
+      <div class="hero-inner">
+        <span class="chapter-tag"><span class="brand-name">竜樹伐採</span> ・ 伐採 ― 終の章</span>
+        <h1>伐採は、倒す方向と<br />搬出の方法を<span class="u">先に決めて</span>から行います。</h1>
+        <p class="lead">伐採は、木の一生を終わらせる仕事です。倒す方向、倒れたあとの搬出、切り株をどうするか。切る前に決めることが多く、そこを曖昧にしたままチェーンソーを入れることはありません。このページでは、庭木一本から空き家・山林の伐採まで、仕事の中身と料金の目安をご説明します。</p>
+        <div class="hero-cta">
+          <a class="btn btn-line" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener">LINEで写真を送って相談</a>
+          <a class="btn btn-tel" href="tel:09020147439" style="background:#f4efe0;color:#171208">電話する</a>
+        </div>
+        <div class="scroll-hint">下へ進むと、木が倒れて、地面に戻ります</div>
+      </div>
+    </div>
+
+    <!-- toc -->
+    <div class="toc-section">
+      <div class="wrap">
+        <div class="toc-card">
+          <h2 class="toc-title">目次</h2>
+          <p class="toc-lead">お知りになりたい項目をタップすると、その場所へ移動いたします。料金だけをご確認になりたい場合は、「料金の目安」をお選びください。</p>
+          <nav aria-label="目次">
+            <ol class="toc-list">
+              <li><a href="#about"><span class="toc-no">其の一</span>伐採という仕事について<span class="toc-arrow" aria-hidden="true">↓</span></a></li>
+              <li><a href="#cases"><span class="toc-no">其の二</span>ご相談の多い場所と木<span class="toc-arrow" aria-hidden="true">↓</span></a></li>
+              <li><a href="#steps"><span class="toc-no">其の三</span>作業当日の段取り<span class="toc-arrow" aria-hidden="true">↓</span></a></li>
+              <li><a href="#price"><span class="toc-no">其の四</span>料金の目安<span class="toc-arrow" aria-hidden="true">↓</span></a></li>
+              <li><a href="#flow"><span class="toc-no">其の五</span>相談から完了まで<span class="toc-arrow" aria-hidden="true">↓</span></a></li>
+              <li><a href="#faq"><span class="toc-no">其の六</span>よくある質問<span class="toc-arrow" aria-hidden="true">↓</span></a></li>
+              <li><a href="#chapters"><span class="toc-no">三章</span>仕事は、三つの章に分けています<span class="toc-arrow" aria-hidden="true">↓</span></a></li>
+              <li><a href="#contact"><span class="toc-no">相談</span>お問い合わせ<span class="toc-arrow" aria-hidden="true">↓</span></a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <section id="about">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">其の一 ・ 終の仕事</div>
+          <h2>伐採という仕事について</h2>
+          <p>伐採は根元から伐り倒す作業ですが、現場で時間をかけるのは「伐る」工程そのものではありません。倒す先の確認、逃げ道の確保、倒れた材をどう運び出すか。この三つが決まってから、初めて切り口を入れます。</p>
+        </div>
+
+        <div class="work-list">
+          <article class="work reveal">
+            <div class="work-photo"><img src="../assets/chapters/notch.jpg" alt="大木の根元に受け口を入れ、追い口を進めている作業の様子" loading="lazy" /></div>
+            <div>
+              <span class="tag-chip">工程 一</span>
+              <h3><span class="step-no">倒す前に</span>倒す先を決めます</h3>
+              <p>木の傾きと重心、その日の風、倒れた先に何があるかを確認します。家や塀、電線、残したい木が倒れる範囲に入っていないか。倒す方向は、切り口の形で決まります。</p>
+              <p>方向が取れない場所では無理に倒さず、特殊伐採（空の章）の方法に切り替えることもあります。その判断も含めて、見積の際にご説明します。</p>
+            </div>
+          </article>
+
+          <article class="work reveal">
+            <div class="work-photo tall"><img src="../assets/chapters/forest.webp" alt="伐採が進む杉林。切り株と、玉切りにされた幹が地面に並んでいます" loading="lazy" /></div>
+            <div>
+              <span class="tag-chip">工程 二</span>
+              <h3><span class="step-no">倒れたあと</span>材を、運べる形にします</h3>
+              <p>倒れた木は、そのままでは運び出せません。枝を払い、幹を運べる長さに切り分ける「玉切り」を行い、搬出の経路まで運びます。伐採の費用が現場ごとに違う理由の多くは、この搬出の手間にあります。</p>
+              <p>薪として残したい場合は、処分せずに置いていくこともできます。ご希望は見積のときにお聞きします。</p>
+            </div>
+          </article>
+
+          <article class="work reveal">
+            <div class="work-photo"><img src="../assets/chapters/stump.jpg" alt="伐採後に残った切り株の年輪" loading="lazy" /></div>
+            <div>
+              <span class="tag-chip">工程 三</span>
+              <h3><span class="step-no">最後に</span>切り株と、跡の始末まで決めます</h3>
+              <p>伐採は地際で伐るため、切り株は残ります。そのままにするか、掘り起こして無くす（抜根）かで、その後の土地の使い方が変わります。解体や売却、駐車場への転用を予定されている場合は、その計画に合わせて方法をご提案します。</p>
+              <p>枝葉の処分と周囲の清掃まで行い、最後にお客様と一緒に仕上がりを確認して、作業は終わります。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- cases -->
+    <section id="cases" class="bg-band">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">其の二 ・ こんな場所</div>
+          <h2>ご相談の多い場所と木</h2>
+          <p>伐採の相談は、木そのものよりも「その場所をどうしたいか」から始まることがほとんどです。代表的な例をご紹介します。</p>
+        </div>
+        <ul class="sit-list">
+          <li class="reveal"><span class="n">一</span><h3>庭木が大きくなりすぎた</h3><p>植えたときは小さかった木が、家の屋根を越えてしまった。手入れの負担を考えて、伐採を選ばれるご相談です。一本から対応しています。</p></li>
+          <li class="reveal"><span class="n">二</span><h3>空き家の庭を整理したい</h3><p>売却や解体の前、管理が難しくなった実家の庭など。庭木の伐採から搬出・処分までまとめて対応します。遠方にお住まいの方からのご依頼も多くあります。</p></li>
+          <li class="reveal"><span class="n">三</span><h3>枯れ木・傾いた木</h3><p>枯れて倒れる危険のある木、台風で傾いた木。放置すると倒木や落枝の事故につながります。危険度の高いものは、優先して日程を調整します。</p></li>
+          <li class="reveal"><span class="n">四</span><h3>竹林が広がってしまった</h3><p>竹は放っておくと境界を越えて広がります。伐採とあわせて、今後の管理の仕方についてもご相談いただけます。</p></li>
+          <li class="reveal"><span class="n">五</span><h3>山林・斜面の木</h3><p>所有する山林の手入れ、道路や隣地へ倒れる心配のある斜面の木。現場の出入りの経路を確認したうえで、作業方法を決めます。</p></li>
+          <li class="reveal"><span class="n">六</span><h3>倒れた木の撤去</h3><p>台風や雪で倒れた木の処理。建物や通路にかかっている場合は、状況を見ながら安全な順序で撤去します。</p></li>
+        </ul>
+        <figure class="photo-block reveal" style="margin-top:34px">
+          <div class="wide-photo" style="margin-top:0"><img src="../assets/chapters/after-path.webp" alt="伐採後の斜面と通路。切り株が残り、通れる状態に戻っています" loading="lazy" /></div>
+          <figcaption><span class="brand-name">竜樹伐採</span>の現場写真です。伐採後の斜面には切り株が残ります。切り株をどうするかは、土地の使い方に合わせて事前に決めます。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- steps -->
+    <section id="steps">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">其の三 ・ 段取り</div>
+          <h2>作業当日の段取り</h2>
+          <p>当日の作業は、立っている木を、最後は更地に近い状態まで持っていく工程です。順序は現場によって変わりますが、基本の流れは次のとおりです。</p>
+        </div>
+        <div class="timeline" id="timeline">
+          <div class="line-v" aria-hidden="true"><i id="timelineFill"></i></div>
+          <div class="dstep reveal"><div class="pin">段</div><h3>段取りの確認</h3><p>倒す方向、退避する場所、近隣への声かけを行います。作業範囲に立ち入らないよう、周囲の安全を確保してから始めます。</p></div>
+          <div class="dstep reveal"><div class="pin">受</div><h3>受け口を入れます</h3><p>倒したい方向に、切り口（受け口）を作ります。この切り口の角度と位置が、倒れる方向を決めます。</p></div>
+          <div class="dstep reveal"><div class="pin">倒</div><h3>追い口を進めて、倒します</h3><p>反対側から追い口を入れ、木が倒れ始めたら決めておいた場所へ退避します。倒れるのは数秒の出来事です。</p></div>
+          <div class="dstep reveal"><div class="pin">玉</div><h3>枝払いと玉切り</h3><p>倒れた幹から枝を払い、運べる長さに切り分けます。材の量と搬出の距離によって、この工程に一番時間がかかることもあります。</p></div>
+          <div class="dstep reveal"><div class="pin">搬</div><h3>搬出と処分</h3><p>切り分けた材と枝葉を車まで運び、処分場へ運びます。薪として残す分は、ご希望の場所にまとめて置きます。</p></div>
+          <div class="dstep ground reveal"><div class="pin">地</div><h3>切り株と、地面の確認</h3><p>切り株の処理を済ませ、周囲を清掃します。最後にお客様と一緒に確認していただき、作業完了となります。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- price -->
+    <section id="price" class="bg-band">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">其の四 ・ 料金</div>
+          <h2>料金の目安</h2>
+          <p>現行のご案内と同じ目安です。実際の金額は、木の高さや太さだけでなく、搬出のしやすさや処分量によって変わります。正式な金額は、写真による概算と現地確認のうえで、作業前にお伝えします。</p>
+        </div>
+        <div class="price-table reveal" role="table" aria-label="伐採料金の目安">
+          <div class="row" role="row"><span class="item" role="cell">庭木伐採<small>庭木一本から対応します</small></span><span class="amt" role="cell">5,000<small>円〜</small></span></div>
+          <div class="row" role="row"><span class="item" role="cell">中木伐採<small>家の高さに届く程度の木</small></span><span class="amt" role="cell">20,000<small>円〜</small></span></div>
+          <div class="row" role="row"><span class="item" role="cell">高木伐採<small>屋根を越える高さの木</small></span><span class="amt" role="cell">50,000<small>円〜</small></span></div>
+          <div class="row" role="row"><span class="item" role="cell">危険木・特殊伐採<small>建物や電線に近い木は空の章の方法で対応します</small></span><span class="amt" role="cell">80,000<small>円〜</small></span></div>
+          <div class="row" role="row"><span class="item" role="cell">空き家の庭木整理<small>複数本の伐採と搬出・処分を含む目安です</small></span><span class="amt" role="cell">150,000<small>円〜</small></span></div>
+          <div class="row" role="row"><span class="item" role="cell">竹林・山林・法面<small>範囲と搬出経路によって大きく変わります</small></span><span class="amt" role="cell">現地見積</span></div>
+        </div>
+        <div class="factors">
+          <div class="factor reveal"><h3>金額が変わる理由 一 ― 搬出</h3><p>切った材を車まで運ぶ距離と道の状態です。路地の奥や坂道では、その分の人手と時間がかかります。</p></div>
+          <div class="factor reveal"><h3>金額が変わる理由 二 ― 処分量</h3><p>搬出・処分は量に応じて別途となる場合があります。薪として残すなど、処分量を減らす方法もご相談いただけます。</p></div>
+        </div>
+        <div class="price-note reveal">
+          <p>写真を送っていただければ、概算の見積をお出しします。現地確認と正式見積は無料です。金額をお聞きになってから断っていただいても構いませんし、見積のあとに金額が増えることはありません。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- flow + faq -->
+    <section id="flow">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">其の五 ・ 流れ</div>
+          <h2>相談から完了まで</h2>
+        </div>
+        <div class="flow reveal">
+          <div class="f"><span class="k">一 ・ 相談</span><h3>電話かLINEで</h3><p>木の場所と本数、お困りの内容をお知らせください。写真があると、その後のご案内が早くなります。</p></div>
+          <div class="f"><span class="k">二 ・ 見積</span><h3>写真で概算、現地で正式に</h3><p>写真から概算をお伝えし、必要な場合は現地を確認して正式な金額と作業内容をまとめます。</p></div>
+          <div class="f"><span class="k">三 ・ 作業</span><h3>日を決めて、作業</h3><p>近隣へご挨拶をしてから始めます。雨風が強い日は安全のため日程を調整し、前日までにご連絡します。</p></div>
+          <div class="f"><span class="k">四 ・ 完了</span><h3>片付けて、一緒に確認</h3><p>搬出と清掃が終わりましたら、仕上がりを一緒にご確認いただいて完了です。</p></div>
+        </div>
+
+        <div class="sec-head reveal" style="margin-top:76px" id="faq">
+          <div class="no">其の六 ・ 質問</div>
+          <h2>よくある質問</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary><span class="q">問</span>一本だけでも頼めますか<span class="plus">＋</span></summary>
+            <div class="a"><p>はい、庭木一本から対応しています。本数が少ないからといって対応が変わることはありませんので、お気軽にご相談ください。</p></div>
+          </details>
+          <details>
+            <summary><span class="q">問</span>写真だけで見積はできますか<span class="plus">＋</span></summary>
+            <div class="a"><p>写真で概算の見積が可能です。木の全体、根元、周囲の建物や電線、搬出の経路が分かる写真をLINEでお送りください。正式な金額は、必要に応じて現地確認のうえでお伝えします。</p></div>
+          </details>
+          <details>
+            <summary><span class="q">問</span>切り株はどうなりますか<span class="plus">＋</span></summary>
+            <div class="a"><p>伐採は地際で伐りますので、切り株は残ります。掘り起こして無くす抜根も対応できますが、手間がかかりますので別途の見積となります。土地の今後の使い方に合わせてご相談ください。</p></div>
+          </details>
+          <details>
+            <summary><span class="q">問</span>切った木を薪として残せますか<span class="plus">＋</span></summary>
+            <div class="a"><p>残せます。処分せずに置いていくことも、薪として使いやすい長さに切り分けることもできます。ご希望は見積の際にお知らせください。</p></div>
+          </details>
+          <details>
+            <summary><span class="q">問</span>見積のあとに断っても大丈夫ですか<span class="plus">＋</span></summary>
+            <div class="a"><p>大丈夫です。金額と作業内容をご確認いただいたうえでご判断ください。無理にお勧めすることはありません。</p></div>
+          </details>
+          <details>
+            <summary><span class="q">問</span>ご近所への配慮はしてもらえますか<span class="plus">＋</span></summary>
+            <div class="a"><p>作業前に近隣へご挨拶に伺い、音の出る作業の時間帯にも配慮して進めます。ご心配な点がありましたら、相談の際にあわせてお知らせください。</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- chapters -->
+    <section class="bg-band" id="chapters" style="padding-top:70px">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no"><span class="brand-name">竜樹伐採</span>の三つの仕事</div>
+          <h2>仕事は、三つの章に分けています</h2>
+          <p>木の始末は、場所と状態によって方法が変わります。<span class="brand-name">竜樹伐採</span>では仕事を三つの章に分け、それぞれ専用のページでご説明しています。</p>
+        </div>
+        <div class="chapters">
+          <a class="chap dim reveal" href="../special-felling/">
+            <span class="state">別の章</span>
+            <div class="kanji">空</div>
+            <h3>特殊伐採 ― 空の章</h3>
+            <p>木に登り、上から少しずつ解体する方法です。倒す場所がない、落とせない場所の木を扱います。</p>
+          </a>
+          <a class="chap dim reveal" href="../tree-pruning/">
+            <span class="state">別の章</span>
+            <div class="kanji">生</div>
+            <h3>剪定 ― 生の章</h3>
+            <p>伐らずに残す木の手入れです。木を生かし続けるために、形と風通しを整えます。</p>
+          </a>
+          <a class="chap current reveal" href="#top" aria-current="page">
+            <span class="state">このページ</span>
+            <div class="kanji">終</div>
+            <h3>伐採 ― 終の章</h3>
+            <p>根元から倒して終わらせる仕事です。切り株と跡の始末まで含めて対応します。</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">相談</div>
+          <h2>まず、木の写真をお送りください</h2>
+          <p>伐るべきかどうか迷っている段階でも構いません。写真を拝見して、伐採が必要かどうかも含めて正直にお答えします。残したほうがよい木は、そのようにお伝えします。</p>
+        </div>
+        <div class="contact-grid">
+          <div class="reveal">
+            <div style="font-size:13px;letter-spacing:.24em;color:#c6bda1">電話でのご相談（9時〜17時ごろ）</div>
+            <a class="tel-big" href="tel:09020147439">090-2014-7439</a>
+            <p class="tel-note">作業中は電話に出られないことがあります。留守番電話にご用件を残していただければ、折り返しご連絡します。LINEとメールは24時間受け付けています。</p>
+            <div class="contact-actions">
+              <a class="btn btn-line" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener" style="min-width:210px">LINEで写真を送る</a>
+              <a class="btn" href="mailto:ryuzyuchop@gmail.com" style="background:transparent;border-color:rgba(255,255,255,.4);color:#f4efe0">メールで相談</a>
+            </div>
+            <p style="color:#c6bda1;font-size:13px;margin:12px 0 0">LINE公式アカウント：ベーシックID @498yeapp（リンクはLINE公式アカウント管理画面で取得した友だち追加URLです）</p>
+            <p style="color:#c6bda1;font-size:13.5px;margin:20px 0 0">対応エリア：奈良市を中心に、生駒市・大和郡山市・天理市・桜井市・橿原市・香芝市・王寺町・斑鳩町・木津川市・精華町など奈良県内と近郊。大阪・京都・三重・和歌山方面も、内容によりご相談いただけます。</p>
+          </div>
+          <figure class="reveal" style="margin:0">
+            <div class="contact-photo"><img src="../assets/chapters/forest.webp" alt="伐採が進む杉林の現場" loading="lazy" /></div>
+            <figcaption style="font-size:12.5px;color:#b7ad92;padding-top:10px">まずは木の全体が写った写真を一枚お送りください。高さや周囲の様子が分かると、概算のご案内が早くなります。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="fbrand"><span class="brand-name">竜樹伐採</span> ― 奈良市の高木伐採・危険木・空き家伐採</div>
+        <p>特殊伐採（空）／剪定（生）／伐採（終）　・　電話 <span style="white-space:nowrap">090-2014-7439</span>　・　メール ryuzyuchop@gmail.com</p>
+        
+      </div>
+    </footer>
+
+    <div class="sticky-cta">
+      <a class="btn btn-line" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener">LINEで相談</a>
+      <a class="btn btn-tel" href="tel:09020147439">電話する</a>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <script>
+      (function(){
+        var PHASES = ['立木','伐倒','玉切り','搬出','更地'];
+        var railPhase = document.getElementById('railPhase'),
+            railFill = document.getElementById('railFill'),
+            railDot = document.getElementById('railDot'),
+            railZone = document.getElementById('railZone'),
+            chipPhase = document.getElementById('chipPhase'),
+            chip = document.querySelector('.phase-chip'),
+            heroEl = document.querySelector('.hero'),
+            timeline = document.getElementById('timeline'),
+            timelineFill = document.getElementById('timelineFill');
+        var ticking = false;
+        function phaseOf(p){
+          var i = Math.min(PHASES.length - 1, Math.floor(p * PHASES.length));
+          return PHASES[i];
+        }
+        function update(){
+          ticking = false;
+          var doc = document.documentElement;
+          var max = doc.scrollHeight - window.innerHeight;
+          var p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+          var ph = phaseOf(p);
+          railPhase.textContent = ph;
+          chipPhase.textContent = ph;
+          railZone.textContent = ph;
+          railFill.style.height = (p * 100) + '%';
+          railDot.style.top = (p * 100) + '%';
+          if (chip && heroEl){
+            // ヒーロー表示中はチップを隠し、CTAボタンに被らないようにする
+            chip.classList.toggle('hide', window.scrollY < heroEl.offsetHeight - window.innerHeight * 0.55);
+          }
+          if (timeline && timelineFill){
+            var r = timeline.getBoundingClientRect();
+            var dp = (window.innerHeight * 0.72 - r.top) / r.height;
+            dp = Math.min(1, Math.max(0, dp));
+            timelineFill.style.transform = 'scaleY(' + dp + ')';
+          }
+        }
+        window.addEventListener('scroll', function(){
+          if (!ticking){ ticking = true; requestAnimationFrame(update); }
+        }, { passive: true });
+        window.addEventListener('resize', update);
+        update();
+
+        // reveal
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var items = document.querySelectorAll('.reveal');
+        if (reduce || !('IntersectionObserver' in window)){
+          items.forEach(function(el){ el.classList.add('in'); });
+        } else {
+          var io = new IntersectionObserver(function(entries){
+            entries.forEach(function(e){
+              if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+            });
+          }, { threshold: 0.12 });
+          items.forEach(function(el){ io.observe(el); });
+        }
+
+        // toast for sibling chapter cards (separate page drafts)
+        var toast = document.getElementById('toast'), timer = null;
+        function showToast(msg){
+          toast.textContent = msg;
+          toast.classList.add('show');
+          clearTimeout(timer);
+          timer = setTimeout(function(){ toast.classList.remove('show'); }, 3400);
+        }
+      })();
+    </script>
+  </body>
+</html>
