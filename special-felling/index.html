@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>特殊伐採 ― 空｜竜樹伐採</title>
+<meta name="description" content="奈良市の特殊伐採は竜樹伐採へ。三つの仕事の第一章「空」。倒す場所のない現場で、ロープで木に登り、上から少しずつ切り下ろす特殊伐採についてご案内します。">
+<link rel="canonical" href="https://ryujubassai.com/special-felling/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="特殊伐採 ― 空｜竜樹伐採">
+<meta property="og:description" content="奈良市の特殊伐採は竜樹伐採へ。三つの仕事の第一章「空」。倒す場所のない現場で、ロープで木に登り、上から少しずつ切り下ろす特殊伐採についてご案内します。">
+<meta property="og:url" content="https://ryujubassai.com/special-felling/">
+<meta property="og:image" content="https://ryujubassai.com/assets/chapters/climber.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="竜樹伐採">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <style>
+      :root{
+        --paper:#f4f1e8;
+        --paper-2:#ece7d9;
+        --ink:#20241f;
+        --ink-soft:#4c524a;
+        --line:#c9c2ae;
+        --sky:#31586e;
+        --sky-deep:#16282f;
+        --sky-pale:#b9cdd6;
+        --moss:#5c6b3c;
+        --bark:#7a5c3e;
+        --accent:#a4442c;
+        --line-green:#06c755;
+        --card:#faf8f2;
+        --shadow:0 18px 40px rgba(22,40,47,.18);
+        --serif:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+        --sans:"Zen Kaku Gothic Antique","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+      }
+      @media (prefers-color-scheme: dark){
+        :root{
+          --paper:#12181a;
+          --paper-2:#182022;
+          --ink:#e9e6da;
+          --ink-soft:#b3b6ab;
+          --line:#3a4442;
+          --sky:#7fa8bd;
+          --sky-deep:#0b1418;
+          --sky-pale:#39525f;
+          --moss:#9db06f;
+          --bark:#c49a6b;
+          --accent:#d98a6d;
+          --card:#1a2325;
+          --shadow:0 18px 40px rgba(0,0,0,.5);
+        }
+      }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+      body{
+        margin:0;background:var(--paper);color:var(--ink);
+        font-family:var(--sans);font-size:16px;line-height:1.9;
+        -webkit-font-smoothing:antialiased;
+      }
+      img{display:block;max-width:100%}
+      a{color:inherit}
+      .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+      /* ---------- top bar ---------- */
+      .topbar{
+        position:fixed;inset:0 0 auto 0;z-index:60;
+        display:flex;align-items:center;gap:14px;
+        padding:10px 16px;
+        background:color-mix(in srgb, var(--paper) 88%, transparent);
+        backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+        border-bottom:1px solid var(--line);
+      }
+      .topbar .brand{font-family:var(--serif);font-weight:900;font-size:17px;letter-spacing:.14em;text-decoration:none;white-space:nowrap}
+      .topbar .brand small{display:block;font-family:var(--sans);font-weight:500;font-size:10px;letter-spacing:.3em;color:var(--ink-soft)}
+      .topbar nav{margin-left:auto;display:none;gap:4px}
+      .topbar nav a{
+        text-decoration:none;font-size:13px;font-weight:500;padding:10px 10px;min-height:40px;
+        display:inline-flex;align-items:center;color:var(--ink-soft);
+      }
+      .topbar nav a:hover{color:var(--ink)}
+      .top-actions{display:flex;gap:8px;margin-left:auto}
+      .topbar nav + .top-actions{margin-left:0}
+      .btn{
+        display:inline-flex;align-items:center;justify-content:center;gap:8px;
+        min-height:44px;padding:10px 18px;border-radius:999px;
+        font-family:var(--sans);font-weight:700;font-size:14px;text-decoration:none;
+        border:1px solid transparent;cursor:pointer;white-space:nowrap;
+      }
+      .btn-tel{background:var(--sky-deep);color:#f2efe4}
+      .btn-line{background:var(--line-green);color:#fff}
+      .btn-ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+      .btn svg{width:17px;height:17px;flex:none}
+      .nb{white-space:nowrap}
+      @media (min-width:860px){ .topbar nav{display:flex} .topbar{padding:10px 28px} }
+      @media (max-width:640px){
+        .topbar{gap:6px;padding:8px 10px;flex-wrap:nowrap}
+        .topbar .brand{font-size:14px;letter-spacing:.06em;flex:none;min-width:0}
+        .topbar .brand small{display:none}
+        .top-actions{gap:6px;flex:none;margin-left:auto}
+        .topbar .btn{padding:8px 10px;font-size:12.5px;min-height:40px;gap:5px;white-space:nowrap;flex:none}
+        .topbar .btn svg{width:15px;height:15px}
+      }
+      @media (max-width:360px){
+        .topbar .brand{font-size:13px}
+        .topbar .btn{padding:8px 8px;font-size:12px}
+      }
+
+      /* ---------- altitude rail ---------- */
+      .rail{
+        position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:55;
+        display:none;flex-direction:column;align-items:center;gap:10px;
+        font-family:var(--sans);
+      }
+      @media (min-width:900px){ .rail{display:flex} }
+      .rail .track{width:2px;height:180px;background:var(--line);position:relative;border-radius:2px}
+      .rail .fill{position:absolute;left:0;top:0;width:100%;background:var(--sky);border-radius:2px}
+      .rail .dot{position:absolute;left:50%;width:11px;height:11px;border-radius:50%;background:var(--sky);transform:translate(-50%,-50%);border:2px solid var(--paper)}
+      .rail .val{writing-mode:vertical-rl;font-size:12px;letter-spacing:.18em;color:var(--ink-soft)}
+      .rail .val b{font-size:15px;color:var(--ink);letter-spacing:.05em}
+      .rail .zone{writing-mode:vertical-rl;font-size:11px;letter-spacing:.34em;color:var(--sky);font-weight:700}
+      .alt-chip{
+        position:fixed;right:12px;bottom:calc(94px + env(safe-area-inset-bottom));z-index:55;
+        background:var(--sky-deep);color:#eef2ee;border-radius:10px;
+        padding:7px 12px;font-size:12px;letter-spacing:.08em;
+        display:flex;gap:8px;align-items:baseline;box-shadow:var(--shadow);
+        transition:opacity .35s ease,transform .35s ease,visibility .35s ease;
+      }
+      .alt-chip b{font-size:16px}
+      /* While the hero (and its call-to-action buttons) is on screen, keep the
+         altitude chip out of the way so it never covers the 電話する button. */
+      .alt-chip.chip-hidden{opacity:0;visibility:hidden;transform:translateY(10px);pointer-events:none}
+      @media (prefers-reduced-motion: reduce){ .alt-chip{transition:none} }
+      @media (min-width:900px){ .alt-chip{display:none} }
+
+      /* ---------- hero ---------- */
+      .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--sky-deep)}
+      .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 30%}
+      .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,20,24,.88) 0%,rgba(10,20,24,.62) 46%,rgba(10,20,24,.42) 74%,rgba(10,20,24,.48) 100%)}
+      .hero .big-sky{
+        position:absolute;top:84px;right:4vw;z-index:2;
+        font-family:var(--serif);font-weight:900;color:rgba(255,255,255,.95);
+        font-feature-settings:"palt" 1;
+        writing-mode:vertical-rl;font-size:clamp(90px,17vw,190px);line-height:1;
+        text-shadow:0 2px 10px rgba(0,0,0,.55),0 6px 34px rgba(0,0,0,.45);letter-spacing:.02em;
+      }
+      @media (max-width:640px){
+        .hero .big-sky{top:78px;right:3vw;font-size:clamp(76px,26vw,110px)}
+        .hero .big-sky span{font-size:.2em}
+      }
+      .hero .big-sky span{display:block;font-size:.16em;letter-spacing:.5em;margin-top:14px;color:rgba(255,255,255,.75)}
+      .hero-inner{position:relative;z-index:3;width:100%;max-width:1080px;margin:0 auto;padding:120px 20px 56px;color:#f4f1e6}
+      .hero .chapter-tag{
+        display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.32em;font-weight:700;
+        border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:7px 14px;margin-bottom:22px;
+        background:rgba(10,20,24,.42);text-shadow:0 1px 6px rgba(0,0,0,.5);
+      }
+      .hero h1{
+        font-family:var(--serif);font-weight:700;
+        font-size:clamp(30px,6.4vw,54px);line-height:1.45;margin:0 0 18px;letter-spacing:.04em;
+        font-feature-settings:"palt" 1;
+        text-shadow:0 2px 14px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.5);
+      }
+      .hero h1 .u{border-bottom:3px solid var(--accent);padding-bottom:2px}
+      .hero p.lead{max-width:34em;font-size:clamp(14px,2.4vw,16.5px);line-height:2;margin:0 0 28px;color:#f0ecdc;text-shadow:0 1px 10px rgba(0,0,0,.6),0 1px 2px rgba(0,0,0,.55)}
+      .hero-cta{display:flex;flex-wrap:wrap;gap:10px}
+      .hero .scroll-hint{
+        margin-top:38px;font-size:11px;letter-spacing:.3em;color:rgba(255,255,255,.85);
+        display:flex;align-items:center;gap:12px;text-shadow:0 1px 8px rgba(0,0,0,.6);
+      }
+      .hero .scroll-hint::after{content:"";width:56px;height:1px;background:rgba(255,255,255,.6)}
+      .hero .alt-note{position:absolute;z-index:3;left:20px;top:110px;color:#fff;font-size:12px;letter-spacing:.22em;writing-mode:vertical-rl;text-shadow:0 1px 8px rgba(0,0,0,.75),0 0 2px rgba(0,0,0,.6)}
+      @media (min-width:860px){ .hero .alt-note{left:34px} }
+      @media (max-width:899px){
+        /* Keep the hero call-to-action buttons clear of the fixed altitude chip
+           and the sticky contact bar at first paint on phones. */
+        .hero-inner{padding-bottom:132px}
+        .hero .scroll-hint{display:none}
+      }
+
+      /* ---------- table of contents ---------- */
+      section[id], #faq{scroll-margin-top:78px}
+      .toc{padding:52px 0 10px}
+      .toc-box{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:26px 22px 10px}
+      @media (min-width:820px){ .toc-box{padding:30px 32px 14px} }
+      .toc-head{display:flex;align-items:baseline;gap:16px;margin-bottom:8px}
+      .toc-head h2{font-family:var(--serif);font-weight:700;font-size:20px;margin:0;letter-spacing:.08em}
+      .toc-head p{margin:0;color:var(--ink-soft);font-size:13px}
+      .toc-list{list-style:none;margin:0;padding:0}
+      @media (min-width:820px){ .toc-list{display:grid;grid-template-columns:1fr 1fr;column-gap:36px} }
+      .toc-list li{border-top:1px solid var(--line)}
+      .toc-list a{
+        display:flex;align-items:center;gap:14px;min-height:54px;padding:12px 4px;
+        text-decoration:none;font-weight:500;line-height:1.6;
+      }
+      .toc-list a:hover{color:var(--sky)}
+      .toc-list .t-no{font-family:var(--serif);font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--sky);white-space:nowrap}
+      .toc-list .t-arrow{margin-left:auto;color:var(--sky);font-size:15px;line-height:1;flex:none}
+
+      /* ---------- sections ---------- */
+      section{padding:84px 0}
+      .sec-head{margin-bottom:40px}
+      .sec-head .no{
+        font-family:var(--serif);font-size:13px;letter-spacing:.3em;color:var(--sky);font-weight:700;
+        display:flex;align-items:center;gap:14px;margin-bottom:14px;
+      }
+      .sec-head .no::after{content:"";flex:0 0 44px;height:1px;background:var(--sky)}
+      .sec-head h2{font-family:var(--serif);font-weight:700;font-size:clamp(24px,4.6vw,34px);line-height:1.5;margin:0 0 12px;letter-spacing:.03em;font-feature-settings:"palt" 1}
+      .sec-head p{color:var(--ink-soft);max-width:40em;margin:0}
+      .alt-mark{
+        display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--sky);
+        border:1px solid var(--sky-pale);border-radius:6px;padding:2px 9px;margin-bottom:12px;background:var(--card);
+      }
+
+      /* Content is always visible; motion lives in the altitude gauge and the descent line. */
+
+      /* chapters of work */
+      .work-list{display:grid;gap:56px}
+      .work{display:grid;gap:20px;align-items:center}
+      @media (min-width:820px){
+        .work{grid-template-columns:1.15fr 1fr;gap:44px}
+        .work:nth-child(even){grid-template-columns:1fr 1.15fr}
+        .work:nth-child(even) .work-photo{order:2}
+      }
+      .work-photo{border-radius:6px;overflow:hidden;box-shadow:var(--shadow)}
+      .work-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+      .work h3{font-family:var(--serif);font-size:clamp(21px,3.6vw,27px);font-weight:700;margin:0 0 10px;line-height:1.5}
+      .work h3 .step-no{color:var(--accent);font-size:.62em;letter-spacing:.2em;display:block;margin-bottom:6px;font-family:var(--sans);font-weight:700}
+      .work p{margin:0;color:var(--ink-soft)}
+      .work p + p{margin-top:10px}
+
+      /* situations */
+      .bg-band{background:var(--paper-2)}
+      .sit-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+      .sit-list li{
+        display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:baseline;
+        padding:20px 4px;border-bottom:1px solid var(--line);
+      }
+      .sit-list .n{font-family:var(--serif);color:var(--sky);font-weight:700;font-size:15px;letter-spacing:.1em}
+      .sit-list h3{font-family:var(--serif);font-size:19px;margin:0;font-weight:700}
+      .sit-list p{grid-column:2;margin:0;color:var(--ink-soft);font-size:14.5px}
+      @media (min-width:820px){ .sit-list p{font-size:15px} }
+
+      /* descent steps */
+      .descent{position:relative;margin-top:8px}
+      .descent .line-v{position:absolute;left:19px;top:8px;bottom:8px;width:2px;background:var(--line);border-radius:2px;overflow:hidden}
+      .descent .line-v i{display:block;width:100%;height:100%;background:var(--sky);transform-origin:top;transform:scaleY(0)}
+      .dstep{position:relative;padding:0 0 34px 58px}
+      .dstep:last-child{padding-bottom:4px}
+      .dstep .pin{
+        position:absolute;left:0;top:2px;width:40px;height:40px;border-radius:50%;
+        background:var(--paper);border:2px solid var(--sky);color:var(--sky);
+        display:flex;align-items:center;justify-content:center;
+        font-family:var(--serif);font-weight:700;font-size:13px;
+      }
+      .dstep.ground .pin{background:var(--moss);border-color:var(--moss);color:#fff}
+      .dstep h3{font-family:var(--serif);margin:0 0 4px;font-size:19px;font-weight:700}
+      .dstep h3 .m{font-family:var(--sans);font-size:12px;color:var(--sky);letter-spacing:.14em;margin-left:10px;font-weight:700}
+      .dstep p{margin:0;color:var(--ink-soft);max-width:38em}
+      .descent-photo{margin-top:26px;border-radius:6px;overflow:hidden;box-shadow:var(--shadow)}
+      .descent-photo img{width:100%;aspect-ratio:16/8;object-fit:cover}
+      .descent-photo figcaption{font-size:12.5px;color:var(--ink-soft);padding:10px 4px 0;background:var(--paper)}
+
+      /* price factors */
+      .factors{display:grid;gap:14px}
+      @media (min-width:820px){ .factors{grid-template-columns:1fr 1fr} }
+      .factor{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px 24px}
+      .factor h3{font-family:var(--serif);margin:0 0 8px;font-size:18px;font-weight:700}
+      .factor p{margin:0;color:var(--ink-soft);font-size:14.5px}
+      .price-note{margin-top:22px;border-left:3px solid var(--accent);padding:6px 0 6px 18px;max-width:44em}
+      .price-note p{margin:0}
+
+      /* flow */
+      .flow{display:grid;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card)}
+      @media (min-width:820px){ .flow{grid-template-columns:repeat(4,1fr)} }
+      .flow .f{padding:24px 22px;border-bottom:1px solid var(--line)}
+      .flow .f:last-child{border-bottom:none}
+      @media (min-width:820px){ .flow .f{border-bottom:none;border-right:1px solid var(--line)} .flow .f:last-child{border-right:none} }
+      .flow .f .k{font-family:var(--serif);color:var(--sky);font-weight:700;font-size:13px;letter-spacing:.24em;display:block;margin-bottom:8px}
+      .flow .f h3{font-family:var(--serif);margin:0 0 6px;font-size:17px}
+      .flow .f p{margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.8}
+
+      /* faq */
+      .faq details{border-bottom:1px solid var(--line)}
+      .faq details:first-of-type{border-top:1px solid var(--line)}
+      .faq summary{
+        cursor:pointer;list-style:none;display:flex;align-items:center;gap:14px;
+        padding:20px 6px;min-height:56px;font-family:var(--serif);font-weight:700;font-size:16.5px;
+      }
+      .faq summary::-webkit-details-marker{display:none}
+      .faq summary .q{color:var(--sky);font-family:var(--serif)}
+      .faq summary .plus{margin-left:auto;color:var(--sky);font-size:20px;line-height:1;transition:transform .3s}
+      .faq details[open ] summary .plus{transform:rotate(45deg)}
+      .faq .a{padding:0 6px 22px 34px;color:var(--ink-soft);max-width:44em}
+      .faq .a p{margin:0}
+
+      /* three chapters nav */
+      .chapters{display:grid;gap:14px}
+      @media (min-width:820px){ .chapters{grid-template-columns:repeat(3,1fr)} }
+      .chap{
+        border:1px solid var(--line);border-radius:10px;padding:28px 24px;background:var(--card);
+        text-decoration:none;display:block;position:relative;overflow:hidden;
+      }
+      .chap .kanji{font-family:var(--serif);font-size:64px;line-height:1;font-weight:900;color:var(--sky);font-feature-settings:"palt" 1}
+      .chap h3{font-family:var(--serif);margin:14px 0 6px;font-size:20px}
+      .chap p{margin:0;font-size:14px;color:var(--ink-soft)}
+      .chap .state{position:absolute;top:18px;right:18px;font-size:11px;font-weight:700;letter-spacing:.16em;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--ink-soft)}
+      .chap.current{border-color:var(--sky);background:linear-gradient(160deg,var(--card),var(--paper-2))}
+      .chap.current .state{background:var(--sky);border-color:var(--sky);color:#fff}
+      .chap.dim{opacity:.75}
+
+      /* contact */
+      .contact{background:var(--sky-deep);color:#eceadf}
+      .contact .sec-head .no{color:var(--sky-pale)}
+      .contact .sec-head .no::after{background:var(--sky-pale)}
+      .contact .sec-head p{color:#c3cdc9}
+      .contact h2{color:#f4f1e6}
+      .contact-grid{display:grid;gap:26px}
+      @media (min-width:820px){ .contact-grid{grid-template-columns:1.2fr 1fr;gap:48px;align-items:start} }
+      .tel-big{font-family:var(--serif);font-size:clamp(27px,7.6vw,44px);font-weight:700;letter-spacing:.04em;text-decoration:none;display:inline-block;margin:6px 0 4px;white-space:nowrap}
+      .tel-note{color:#c3cdc9;font-size:13.5px;margin:0 0 22px}
+      .contact .btn{min-height:52px;padding:12px 24px;font-size:15px}
+      .contact-actions{display:flex;flex-wrap:wrap;gap:10px}
+      .contact-photo{border-radius:6px;overflow:hidden}
+      .contact-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+      .contact-photo figcaption{font-size:12.5px;color:#aebbb4;padding-top:10px}
+      @media (prefers-color-scheme: dark){ .contact{background:#0b1418} }
+
+      footer{padding:34px 0 110px;border-top:1px solid var(--line)}
+      @media (min-width:900px){ footer{padding-bottom:40px} }
+      footer .fbrand{font-family:var(--serif);font-weight:700;letter-spacing:.14em;font-size:16px}
+      footer p{color:var(--ink-soft);font-size:13px;margin:6px 0 0}
+      footer 
+
+      /* mobile sticky contact */
+      .sticky-cta{
+        position:fixed;left:0;right:0;bottom:0;z-index:60;
+        display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+        background:color-mix(in srgb, var(--paper) 92%, transparent);
+        backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+        border-top:1px solid var(--line);
+      }
+      .sticky-cta .btn{flex:1;min-height:48px}
+      @media (min-width:900px){ .sticky-cta{display:none} }
+
+      .toast{
+        position:fixed;left:50%;bottom:96px;transform:translate(-50%,16px);z-index:80;
+        background:var(--sky-deep);color:#f0eee2;font-size:13.5px;line-height:1.7;
+        padding:14px 18px;border-radius:10px;max-width:min(92vw,430px);
+        opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;box-shadow:var(--shadow);
+      }
+      .toast.show{opacity:1;transform:translate(-50%,0)}
+      @media (min-width:900px){ .toast{bottom:40px} }
+
+      /* ---------- background descent world (whole-page backdrop) ---------- */
+      /* The entire page sits in front of one tall tree. Scrolling travels the
+         trunk from the canopy (30m) to the ground: the trunk texture and what
+         lives on it — nest, vine, dead branch, fungi, crack, borer holes —
+         slide past behind the text while the climber descends the rope. */
+      .bg-world{
+        position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden;
+        --trunkR:clamp(6px,4vw,72px);
+        --trunkW:clamp(130px,17vw,232px);
+        --climbW:158px;
+        --ropeOff:55px;
+      }
+      @media (max-width:899px){
+        .bg-world{--trunkR:0px;--trunkW:88px;--climbW:96px;--ropeOff:34px}
+      }
+      .bg-light{
+        position:absolute;inset:0;
+        background:
+          radial-gradient(120% 55% at 80% -10%, rgba(255,242,196,.22), transparent 60%),
+          linear-gradient(180deg, rgba(49,88,110,.10), transparent 26%, transparent 72%, rgba(64,52,30,.14));
+      }
+      .bg-leafshadow{
+        position:absolute;inset:-6%;opacity:.055;
+        background:
+          radial-gradient(70px 38px at 10% 16%, #1e2c16 62%, transparent 63%),
+          radial-gradient(52px 30px at 22% 34%, #1e2c16 62%, transparent 63%),
+          radial-gradient(84px 44px at 6% 58%, #1e2c16 62%, transparent 63%),
+          radial-gradient(58px 32px at 18% 78%, #1e2c16 62%, transparent 63%),
+          radial-gradient(66px 36px at 30% 8%, #1e2c16 62%, transparent 63%),
+          radial-gradient(48px 28px at 34% 92%, #1e2c16 62%, transparent 63%);
+      }
+      @media (prefers-color-scheme: dark){ .bg-leafshadow{opacity:.1} }
+      .bg-track{position:absolute;left:0;right:0;top:0;height:340vh;will-change:transform;z-index:0}
+      /* readability veil: the left of the page stays paper, the tree lives on the right */
+      .bg-world::after{
+        content:"";position:absolute;inset:0;z-index:1;
+        background:linear-gradient(90deg, color-mix(in srgb, var(--paper) 92%, transparent) 0%, color-mix(in srgb, var(--paper) 55%, transparent) 34%, transparent 62%);
+      }
+      @media (max-width:899px){
+        .bg-world::after{background:linear-gradient(90deg, color-mix(in srgb, var(--paper) 94%, transparent) 0%, color-mix(in srgb, var(--paper) 72%, transparent) 40%, transparent 74%)}
+      }
+      .bg-trunk{
+        position:absolute;top:0;bottom:0;right:var(--trunkR);width:var(--trunkW);
+        background:
+          repeating-linear-gradient(93deg, rgba(26,17,9,.22) 0 3px, transparent 3px 12px, rgba(255,236,204,.05) 12px 14px, transparent 14px 27px),
+          repeating-linear-gradient(178deg, rgba(0,0,0,.055) 0 52px, transparent 52px 132px),
+          linear-gradient(90deg,#43301d 0%,#5f4630 15%,#82644a 36%,#93755a 50%,#7a5c3e 66%,#543e29 86%,#372818 100%);
+        box-shadow:inset 14px 0 22px rgba(20,12,5,.45), inset -16px 0 26px rgba(20,12,5,.55), inset 0 0 60px rgba(30,20,10,.25);
+        opacity:.96;
+        -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%);
+        mask-image:linear-gradient(90deg,transparent 0,#000 30%);
+      }
+      @media (max-width:899px){ .bg-trunk{opacity:.5} }
+      @media (prefers-color-scheme: dark){ .bg-trunk{filter:brightness(.72)} }
+      .bg-knot{
+        position:absolute;width:34px;height:46px;border-radius:50%;
+        background:radial-gradient(ellipse at 50% 50%, #2e2013 0 22%, #5d4630 30%, #8a6a4c 52%, rgba(90,66,42,0) 72%);
+        opacity:.8;
+      }
+      .bg-item{position:absolute;overflow:visible}
+      .bg-item svg{display:block;width:100%;height:auto;overflow:visible}
+      .bg-canopy{top:-14px;right:calc(var(--trunkR) - 120px);width:min(480px,60vw)}
+      @media (max-width:899px){ .bg-canopy{right:-70px;width:270px;opacity:.85} }
+      .bg-nest{top:8.5%;right:calc(var(--trunkR) + var(--trunkW)*.52);width:min(264px,34vw)}
+      @media (max-width:899px){ .bg-nest{width:150px} }
+      .bg-vine{top:25%;right:calc(var(--trunkR) - 14px);width:calc(var(--trunkW) + 30px)}
+      .bg-branch{top:42.5%;right:calc(var(--trunkR) + var(--trunkW)*.55);width:min(272px,36vw);z-index:3}
+      @media (max-width:899px){ .bg-branch{width:150px} }
+      .bg-branch .branch-wood{transform-origin:93% 68%}
+      .bg-branch.broken .branch-wood{animation:branchFall 1.2s cubic-bezier(.3,.65,.4,1) forwards}
+      @keyframes branchFall{
+        0%{transform:rotate(0deg)}
+        13%{transform:rotate(8deg)}
+        24%{transform:rotate(-2.5deg)}
+        100%{transform:rotate(66deg) translate(-34px,54vh);opacity:0}
+      }
+      .bg-branch .snap-lines{opacity:0}
+      .bg-branch.broken .snap-lines{animation:snapFlash .5s ease-out forwards}
+      @keyframes snapFlash{0%{opacity:0}25%{opacity:1}100%{opacity:0}}
+      .bg-branch .dust{opacity:0}
+      .bg-branch.broken .dust{animation:dustPuff 1s ease-out forwards}
+      @keyframes dustPuff{0%{opacity:0;transform:translateY(0)}20%{opacity:.85}100%{opacity:0;transform:translateY(26px)}}
+      .bg-shrooms{top:59%;right:calc(var(--trunkR) + var(--trunkW)*.68);width:min(118px,15vw)}
+      @media (max-width:899px){ .bg-shrooms{width:64px} }
+      .bg-crack{top:71%;right:calc(var(--trunkR) + var(--trunkW)*.34);width:min(64px,9vw)}
+      .bg-insect{top:85.5%;right:calc(var(--trunkR) + var(--trunkW)*.3);width:min(126px,16vw)}
+      @media (max-width:899px){ .bg-insect{width:72px} }
+      .bg-ground{bottom:-8px;right:0;width:min(680px,92vw)}
+      .bg-fallen{bottom:2.2%;right:calc(var(--trunkR) + var(--trunkW)*.9);width:min(230px,30vw);opacity:0;transform:rotate(4deg);transition:opacity .6s ease .55s}
+      .bg-world.branch-broken .bg-fallen{opacity:.95}
+      @media (max-width:899px){ .bg-fallen{width:130px} }
+      /* rope + climber live in viewport space: the rope is always taut and the
+         climber travels down it as the world slides past. */
+      .bg-rope{
+        position:absolute;z-index:2;top:-2%;bottom:-2%;right:calc(var(--trunkR) + var(--trunkW)*.30);width:5px;border-radius:3px;
+        background:repeating-linear-gradient(to bottom,#93a75e 0 9px,#71823f 9px 18px);
+        box-shadow:1px 0 2px rgba(20,26,10,.35), -1px 0 1px rgba(255,255,255,.18);
+      }
+      .bg-climber2{
+        position:absolute;z-index:2;top:20%;width:var(--climbW);
+        right:calc(var(--trunkR) + var(--trunkW)*.30 - var(--ropeOff));
+        filter:drop-shadow(0 14px 16px rgba(10,16,10,.35));
+        will-change:top;
+      }
+      .bg-climber2 .sway{animation:sway 4.2s ease-in-out infinite;transform-origin:66% 0}
+      @keyframes sway{0%,100%{transform:rotate(-1.3deg)}50%{transform:rotate(1.3deg)}}
+      @media (prefers-reduced-motion: reduce){
+        .bg-climber2 .sway{animation:none}
+        .bg-branch.broken .branch-wood{animation-duration:.01s}
+      }
+      /* page content rides above the tree, on translucent ground */
+      .hero, .toc, section, footer{position:relative;z-index:2}
+      section:not(.contact){background:transparent}
+      .bg-band{background:color-mix(in srgb, var(--paper-2) 76%, transparent)}
+    </style>
+  </head>
+  <body>
+
+    <header class="topbar">
+      <a class="brand" href="/">竜樹伐採<small>RYUJU BASSAI ・ NARA</small></a>
+      <nav aria-label="ページ内メニュー">
+        <a href="#about">特殊伐採とは</a>
+        <a href="#cases">こんな木</a>
+        <a href="#steps">当日の段取り</a>
+        <a href="#price">料金の考え方</a>
+        <a href="#faq">よく聞かれること</a>
+      </nav>
+      <div class="top-actions">
+        <a class="btn btn-line" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener" aria-label="LINEで相談（公式アカウント）">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 11.2c0-4.9-4.3-8.9-9.6-8.9S2.4 6.3 2.4 11.2c0 4.4 3.9 8.1 9.1 8.8.4 0 .9.2 1 .6l.4 2.3c.1.4.4.5.8.2l3.5-2.8c.2-.1.3-.2.5-.3 2.4-1.6 3.9-4 3.9-6.8ZM8.3 14.6H5.6c-.3 0-.6-.3-.6-.6V9.9c0-.3.3-.6.6-.6h.6c.3 0 .6.3.6.6v3.9h1.5c.3 0 .6.3.6.6s-.3.2-.6.2Zm2.3-.6c0 .3-.3.6-.6.6h-.6c-.3 0-.6-.3-.6-.6V9.9c0-.3.3-.6.6-.6h.6c.3 0 .6.3.6.6V14Zm5.4 0c0 .3-.2.5-.5.5-.2 0-.3-.1-.4-.2l-2.4-2.9V14c0 .3-.3.6-.6.6h-.6c-.3 0-.6-.3-.6-.6V9.9c0-.3.3-.6.6-.6h.6c.2 0 .4.1.5.2l2.4 2.9V9.9c0-.3.3-.6.6-.6h.6c.3 0 .6.3.6.6V14Zm3.4-3.4c.3 0 .6.3.6.6s-.3.6-.6.6h-1.7v.8h1.7c.3 0 .6.3.6.6s-.3.6-.6.6h-2.3c-.3 0-.6-.3-.6-.6V9.9c0-.3.3-.6.6-.6h2.3c.3 0 .6.3.6.6s-.3.6-.6.6h-1.7v.1h1.7Z"/></svg>
+          LINEで相談
+        </a>
+        <a class="btn btn-tel" href="tel:09020147439" aria-label="電話する（090-2014-7439へ発信）">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.9.7a2 2 0 0 1 1.6 2Z"/></svg>
+          電話する
+        </a>
+      </div>
+    </header>
+
+    <!-- altitude rail -->
+    <div class="rail" aria-hidden="true">
+      <div class="zone" id="railZone">樹冠</div>
+      <div class="track"><div class="fill" id="railFill" style="height:100%"></div><div class="dot" id="railDot" style="top:0%"></div></div>
+      <div class="val">現在の高さ <b id="railAlt">30.0m</b></div>
+    </div>
+    <div class="alt-chip chip-hidden" aria-hidden="true"><span>現在の高さ</span><b id="chipAlt">30.0m</b><span id="chipZone">樹冠</span></div>
+
+    <!-- background descent world: one tall tree behind the whole page.
+         Scrolling descends it from 30m to the ground on a Rope Runner. -->
+    <div class="bg-world" id="bgWorld" aria-hidden="true">
+      <div class="bg-light"></div>
+      <div class="bg-leafshadow"></div>
+      <div class="bg-track" id="bgTrack">
+        <div class="bg-trunk">
+          <div class="bg-knot" style="top:33%;left:26%"></div>
+          <div class="bg-knot" style="top:66%;left:56%;width:26px;height:36px"></div>
+          <div class="bg-knot" style="top:80%;left:20%;width:22px;height:30px"></div>
+        </div>
+
+        <!-- canopy -->
+        <div class="bg-item bg-canopy">
+          <svg viewBox="0 0 480 210">
+            <path d="M470 200 C400 130 330 108 250 96 M462 168 C380 128 320 128 268 138" fill="none" stroke="#5d4630" stroke-width="13" stroke-linecap="round"/>
+            <path d="M470 200 C400 130 330 108 250 96" fill="none" stroke="#7a5c3e" stroke-width="5" stroke-linecap="round" opacity=".7"/>
+            <g fill="#5c7236">
+              <ellipse cx="120" cy="70" rx="95" ry="52"/><ellipse cx="250" cy="46" rx="105" ry="56"/><ellipse cx="368" cy="76" rx="88" ry="48"/><ellipse cx="60" cy="110" rx="62" ry="34"/><ellipse cx="430" cy="118" rx="58" ry="32"/>
+            </g>
+            <g fill="#6d8440">
+              <ellipse cx="140" cy="58" rx="70" ry="36"/><ellipse cx="262" cy="36" rx="76" ry="38"/><ellipse cx="360" cy="60" rx="62" ry="32"/>
+            </g>
+            <g fill="#7f9a4e" opacity=".85">
+              <ellipse cx="168" cy="44" rx="42" ry="20"/><ellipse cx="292" cy="26" rx="44" ry="20"/><ellipse cx="96" cy="86" rx="34" ry="17"/>
+            </g>
+            <g fill="#42551f" opacity=".55">
+              <ellipse cx="238" cy="86" rx="66" ry="24"/><ellipse cx="392" cy="104" rx="48" ry="20"/><ellipse cx="120" cy="102" rx="48" ry="20"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- bird's nest on a high branch -->
+        <div class="bg-item bg-nest">
+          <svg viewBox="0 0 264 128">
+            <path d="M262 108 C190 96 128 84 66 58" fill="none" stroke="#5d4630" stroke-width="15" stroke-linecap="round"/>
+            <path d="M262 104 C196 92 140 82 84 62" fill="none" stroke="#82644a" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+            <path d="M120 74 C96 58 74 54 50 56 M150 82 C138 64 122 54 104 48" fill="none" stroke="#5d4630" stroke-width="7" stroke-linecap="round"/>
+            <g stroke="#6e5636" stroke-width="4" stroke-linecap="round" fill="none">
+              <path d="M28 84 Q84 62 142 84"/><path d="M24 92 Q84 72 146 92"/><path d="M30 100 Q86 82 140 100"/>
+            </g>
+            <g stroke="#93765a" stroke-width="3" stroke-linecap="round" fill="none">
+              <path d="M34 88 Q84 70 138 88"/><path d="M40 78 Q84 60 132 78"/><path d="M52 104 Q86 92 124 104"/>
+            </g>
+            <ellipse cx="86" cy="86" rx="58" ry="17" fill="#54402a"/>
+            <ellipse cx="86" cy="82" rx="52" ry="13" fill="#6e5636"/>
+            <ellipse cx="70" cy="74" rx="11" ry="8" fill="#e8e4d2"/>
+            <ellipse cx="94" cy="72" rx="11" ry="8" fill="#dfe4d2"/>
+            <ellipse cx="82" cy="78" rx="10" ry="7" fill="#e2ddc8"/>
+            <path d="M196 84 q10 -12 22 -10 M206 92 q12 -8 22 -4" stroke="#5c7236" stroke-width="5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <!-- vine spiralling the trunk -->
+        <div class="bg-item bg-vine">
+          <svg viewBox="0 0 230 300">
+            <path d="M18 8 C150 44 60 84 196 116 C84 148 40 178 178 214 C92 244 70 262 150 292" fill="none" stroke="#47622c" stroke-width="9" stroke-linecap="round"/>
+            <path d="M18 8 C150 44 60 84 196 116 C84 148 40 178 178 214 C92 244 70 262 150 292" fill="none" stroke="#5d7d39" stroke-width="3.5" stroke-linecap="round" opacity=".8"/>
+            <g fill="#5d7d39">
+              <path d="M96 40 q-20 -14 -34 -4 q16 14 34 4Z"/><path d="M150 96 q-4 -22 -22 -28 q2 20 22 28Z"/><path d="M84 158 q-22 -6 -32 8 q18 8 32 -8Z"/><path d="M160 200 q2 -22 -14 -32 q-4 20 14 32Z"/><path d="M104 252 q-20 -10 -34 0 q14 12 34 0Z"/>
+            </g>
+            <g fill="#6d8c42">
+              <path d="M128 62 q14 -16 30 -12 q-8 16 -30 12Z"/><path d="M60 118 q-16 -12 -30 -6 q12 14 30 6Z"/><path d="M138 232 q16 -12 30 -4 q-12 14 -30 4Z"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- dead branch: snaps when the climber reaches it -->
+        <div class="bg-item bg-branch" id="bgBranch">
+          <svg viewBox="0 0 272 150">
+            <g class="branch-wood">
+              <path d="M268 104 C206 92 148 66 84 40 C58 30 34 26 12 28" fill="none" stroke="#a2937f" stroke-width="13" stroke-linecap="round"/>
+              <path d="M268 100 C208 88 152 64 90 40" fill="none" stroke="#c0b2a0" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+              <path d="M150 66 C138 48 122 38 102 34 M196 84 C190 64 178 50 162 42 M104 46 C96 30 84 22 70 18" fill="none" stroke="#a2937f" stroke-width="6" stroke-linecap="round"/>
+              <path d="M238 96 l-16 6 M206 86 l-12 8 M168 74 l-12 6" stroke="#6f6152" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M262 108 L250 118" stroke="#4a3826" stroke-width="5" stroke-linecap="round"/>
+            </g>
+            <g class="snap-lines" stroke="#a4442c" stroke-width="4" stroke-linecap="round">
+              <path d="M252 84 l8 -14 M262 96 l15 -6 M250 116 l6 13"/>
+            </g>
+            <g class="dust" fill="#b8a888">
+              <circle cx="246" cy="112" r="4"/><circle cx="232" cy="120" r="3"/><circle cx="256" cy="124" r="2.6"/><circle cx="240" cy="104" r="2.4"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- shelf fungi: rot at work inside -->
+        <div class="bg-item bg-shrooms">
+          <svg viewBox="0 0 118 112">
+            <path d="M116 20 Q66 2 30 22 Q64 34 116 20Z" fill="#c9b995" stroke="#8a7a5c" stroke-width="2"/>
+            <path d="M104 21 Q70 10 44 21" fill="none" stroke="#9c8a68" stroke-width="3"/>
+            <path d="M116 52 Q76 36 44 54 Q78 66 116 52Z" fill="#bfae8b" stroke="#8a7a5c" stroke-width="2"/>
+            <path d="M104 53 Q78 44 56 53" fill="none" stroke="#8f7c5c" stroke-width="3"/>
+            <path d="M116 82 Q84 68 58 84 Q86 94 116 82Z" fill="#d3c5a2" stroke="#8a7a5c" stroke-width="2"/>
+          </svg>
+        </div>
+
+        <!-- vertical crack in the trunk -->
+        <div class="bg-item bg-crack">
+          <svg viewBox="0 0 64 210">
+            <path d="M34 4 L22 44 L40 74 L24 112 L38 148 L28 206" fill="none" stroke="#191008" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M34 4 L22 44 L40 74 L24 112 L38 148 L28 206" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+            <path d="M38 74 L54 88 M24 112 L8 124 M36 148 L52 158" fill="none" stroke="#241708" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <!-- borer holes and frass near the base -->
+        <div class="bg-item bg-insect">
+          <svg viewBox="0 0 126 104">
+            <g fill="#170e05">
+              <ellipse cx="34" cy="26" rx="8" ry="10"/><ellipse cx="62" cy="18" rx="6" ry="8"/><ellipse cx="88" cy="30" rx="7" ry="9"/><ellipse cx="48" cy="50" rx="7" ry="9"/><ellipse cx="78" cy="56" rx="5" ry="7"/><ellipse cx="24" cy="58" rx="5" ry="6"/><ellipse cx="100" cy="58" rx="4" ry="6"/>
+            </g>
+            <g fill="none" stroke="#a5855c" stroke-width="2" opacity=".8">
+              <ellipse cx="34" cy="26" rx="10" ry="12"/><ellipse cx="62" cy="18" rx="8" ry="10"/><ellipse cx="88" cy="30" rx="9" ry="11"/><ellipse cx="48" cy="50" rx="9" ry="11"/>
+            </g>
+            <g fill="#c9ae7d">
+              <circle cx="40" cy="86" r="3"/><circle cx="56" cy="92" r="2.4"/><circle cx="70" cy="86" r="2.8"/><circle cx="84" cy="92" r="2.2"/><circle cx="50" cy="80" r="2"/><circle cx="64" cy="96" r="2"/>
+            </g>
+            <ellipse cx="62" cy="94" rx="34" ry="6" fill="#b99c6c" opacity=".55"/>
+          </svg>
+        </div>
+
+        <!-- the fallen dead branch, once it has snapped -->
+        <div class="bg-item bg-fallen">
+          <svg viewBox="0 0 230 74">
+            <path d="M6 56 C70 44 140 34 224 22" fill="none" stroke="#a2937f" stroke-width="11" stroke-linecap="round"/>
+            <path d="M6 52 C70 41 138 31 218 20" fill="none" stroke="#c0b2a0" stroke-width="3.5" stroke-linecap="round" opacity=".8"/>
+            <path d="M84 42 C76 28 64 20 50 16 M140 32 C134 18 124 10 110 6" fill="none" stroke="#a2937f" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <!-- ground -->
+        <div class="bg-item bg-ground">
+          <svg viewBox="0 0 680 132">
+            <path d="M470 132 C480 84 500 60 540 44 L548 132 Z" fill="#5d4630"/>
+            <path d="M470 132 C480 84 500 60 540 44" fill="none" stroke="#43301d" stroke-width="4"/>
+            <path d="M0 132 L0 108 C140 88 300 96 470 104 C560 108 630 104 680 96 L680 132 Z" fill="#4c3a24"/>
+            <path d="M0 110 C160 90 340 98 680 98" fill="none" stroke="#6b5636" stroke-width="3" opacity=".7"/>
+            <g stroke="#5c7236" stroke-width="3.4" stroke-linecap="round" fill="none">
+              <path d="M60 108 q-4 -18 -12 -26 M76 106 q0 -20 6 -30 M96 108 q4 -16 12 -24 M210 104 q-4 -16 -12 -24 M228 103 q2 -18 10 -26 M420 106 q-4 -15 -11 -22 M438 105 q2 -17 9 -25 M590 102 q-3 -14 -10 -21 M606 101 q2 -15 8 -22"/>
+            </g>
+            <g fill="#3d2c18">
+              <ellipse cx="150" cy="118" rx="16" ry="5"/><ellipse cx="330" cy="114" rx="12" ry="4"/><ellipse cx="520" cy="116" rx="14" ry="4.6"/>
+            </g>
+            <ellipse cx="120" cy="104" rx="26" ry="7" fill="#6b5636" opacity=".6"/>
+            <ellipse cx="380" cy="102" rx="30" ry="6" fill="#6b5636" opacity=".5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="bg-rope"></div>
+
+      <!-- climber on a Rope Runner -->
+      <div class="bg-climber2" id="bgClimber2">
+        <div class="sway">
+          <svg viewBox="0 0 160 210" role="img" aria-label="ロープランナーでロープを降りる作業員">
+            <defs>
+              <linearGradient id="rrMetal" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3a3f45"/><stop offset=".5" stop-color="#15181b"/><stop offset="1" stop-color="#2c3036"/>
+              </linearGradient>
+              <linearGradient id="jacket" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#33424c"/><stop offset="1" stop-color="#1f2a31"/>
+              </linearGradient>
+            </defs>
+            <!-- rope through the device -->
+            <line x1="104" y1="0" x2="104" y2="210" stroke="#71823f" stroke-width="5" stroke-linecap="round"/>
+            <line x1="104" y1="0" x2="104" y2="210" stroke="#93a75e" stroke-width="5" stroke-dasharray="7 9" stroke-linecap="round"/>
+            <!-- legs: one foot braced on the trunk, one knee bent -->
+            <path d="M74 118 L104 138 L136 140" fill="none" stroke="#232a2e" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M70 120 L52 152 L60 182" fill="none" stroke="#2b3338" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M132 132 l16 3 -2 10 -16 -2 Z" fill="#17191b"/>
+            <path d="M52 176 l14 6 -4 9 -14 -5 Z" fill="#17191b"/>
+            <!-- torso -->
+            <path d="M50 62 Q72 50 92 60 L98 116 Q72 126 46 116 Z" fill="url(#jacket)"/>
+            <path d="M71 56 L73 120" stroke="#141c21" stroke-width="3"/>
+            <!-- harness webbing -->
+            <path d="M50 74 L96 96 M94 72 L48 98" stroke="#c96a28" stroke-width="5" opacity=".92"/>
+            <path d="M46 112 Q72 122 98 112" stroke="#c96a28" stroke-width="6" fill="none"/>
+            <ellipse cx="58" cy="122" rx="5" ry="8" fill="none" stroke="#c8ccd0" stroke-width="2.6"/>
+            <ellipse cx="88" cy="122" rx="5" ry="8" fill="none" stroke="#c8ccd0" stroke-width="2.6"/>
+            <!-- head and helmet -->
+            <circle cx="68" cy="38" r="13" fill="#d9a37e"/>
+            <path d="M52 34 a16 15 0 0 1 32 -2 l3 3 -38 2 Z" fill="#f2c230"/>
+            <path d="M50 37 h38" stroke="#d9a41c" stroke-width="4" stroke-linecap="round"/>
+            <rect x="82" y="30" width="7" height="13" rx="3" fill="#8a6d1f"/>
+            <path d="M60 48 q8 5 15 1" stroke="#7a5a3a" stroke-width="2" fill="none"/>
+            <!-- arms: right hand works the device, left holds the rope tail -->
+            <path d="M92 66 Q104 74 103 86" fill="none" stroke="#26333b" stroke-width="10" stroke-linecap="round"/>
+            <path d="M50 68 Q40 92 58 108 Q66 114 76 112" fill="none" stroke="#26333b" stroke-width="10" stroke-linecap="round"/>
+            <circle cx="79" cy="111" r="5" fill="#d9a37e"/>
+            <!-- Rope Runner: bird head, bollard and friction plates on the chest rope -->
+            <g transform="translate(91,64)">
+              <path d="M13 0 C20 -3 27 0 30 5 L20 9 C16 5 14 3 13 0Z" fill="#e07b2a"/>
+              <rect x="4" y="6" width="19" height="34" rx="6" fill="url(#rrMetal)" stroke="#4a5058" stroke-width="1.4"/>
+              <rect x="8" y="10" width="11" height="26" rx="4" fill="#22262b"/>
+              <circle cx="13.5" cy="14" r="4.4" fill="#e07b2a" stroke="#8a4a12" stroke-width="1.2"/>
+              <circle cx="13.5" cy="32" r="4.4" fill="#c8ccd0" stroke="#5a6166" stroke-width="1.2"/>
+              <circle cx="13.5" cy="23" r="2" fill="#e8eaec"/>
+              <path d="M5 40 q8 5 16 0 l-2 6 q-6 3 -12 0 Z" fill="#2c3036" stroke="#4a5058"/>
+            </g>
+            <!-- rope tail hanging from the device -->
+            <path d="M104 118 C100 140 108 158 100 178" fill="none" stroke="#71823f" stroke-width="4" stroke-linecap="round"/>
+            <!-- chainsaw on a lanyard at the hip -->
+            <g transform="translate(16,120) rotate(18)">
+              <rect x="0" y="0" width="26" height="15" rx="3" fill="#e8e4da" stroke="#9a958a"/>
+              <rect x="4" y="3" width="10" height="6" fill="#e07b2a"/>
+              <path d="M26 10 L48 14 L47 18 L26 14 Z" fill="#b9bdc2" stroke="#7c8288"/>
+            </g>
+            <path d="M46 116 L34 122" stroke="#555" stroke-width="2.4"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero -->
+    <div class="hero" id="top">
+      <img class="bg" src="../assets/chapters/climber.jpg" alt="青空の下、高い木の幹にロープで登り、チェーンソーを腰に提げた作業員" />
+      <div class="alt-note">地上 三〇メートル</div>
+      <div class="big-sky" aria-hidden="true">空<span>特殊伐採の章</span></div>
+      <div class="hero-inner">
+        <span class="chapter-tag"><span class="nb">竜樹伐採</span> ・ 特殊伐採 ― 空の章</span>
+        <h1>倒す場所のない現場で、<br />木を<span class="u">倒す</span>仕事です。</h1>
+        <p class="lead">クレーンが入らず、倒す余地もない場所でも、木を始末しなければならないことがあります。そのときは、ロープで木に登り、枝を吊って、上から少しずつ降ろしていきます。実際には30メートル前後まで登ることもございます。それが特殊伐採です。</p>
+        <div class="hero-cta">
+          <a class="btn btn-line" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener">LINEで写真を送って相談</a>
+          <a class="btn btn-tel" href="tel:09020147439" style="background:#f4f1e6;color:#16282f" aria-label="電話する（090-2014-7439へ発信）">電話する</a>
+        </div>
+        <div class="scroll-hint">下へ進むと、ロープで一緒に降りて地面に近づきます</div>
+      </div>
+    </div>
+
+    <!-- table of contents -->
+    <nav class="toc" aria-label="目次">
+      <div class="wrap">
+        <div class="toc-box">
+          <div class="toc-head">
+            <h2>目次</h2>
+            <p>知りたい項目を押すと、その場所まで移動します。</p>
+          </div>
+          <ol class="toc-list">
+            <li><a href="#about"><span class="t-no">其の一</span><span>特殊伐採という仕事について</span><span class="t-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a href="#cases"><span class="t-no">其の二</span><span>このような木が、私たちの仕事です</span><span class="t-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a href="#steps"><span class="t-no">其の三</span><span>当日の段取り ― 空から地面まで</span><span class="t-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a href="#price"><span class="t-no">其の四</span><span>料金は、現場で決まります</span><span class="t-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a href="#flow"><span class="t-no">其の五</span><span>相談から片付けまで</span><span class="t-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a href="#faq"><span class="t-no">其の六</span><span>よく聞かれること</span><span class="t-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a href="#chapters"><span class="t-no">三つの仕事</span><span>仕事は、三つに分けて考えています</span><span class="t-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a href="#contact"><span class="t-no">相談</span><span>その木、一度見せてください（お問い合わせ）</span><span class="t-arrow" aria-hidden="true">↓</span></a></li>
+          </ol>
+        </div>
+      </div>
+    </nav>
+
+    <!-- about -->
+    <section id="about">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">其の一 ・ 空の仕事</div>
+          <h2>特殊伐採という仕事について</h2>
+          <p>通常の伐採は、木を根元から倒します。特殊伐採はその逆で、人が木の上部まで登り、上のほうから解体していく方法です。切った枝や幹はその場に落とさず、すべてロープで吊って降ろします。家の真上や電線のそば、隣の敷地との境い目など、落とせない場所ほど、この仕事の出番となります。</p>
+        </div>
+
+        <div class="work-list">
+          <article class="work reveal">
+            <div class="work-photo"><img src="../assets/chapters/rigging.jpg" alt="松の高い枝の上で、切る枝にロープと滑車をかける作業員" loading="lazy" /></div>
+            <div>
+              <span class="alt-mark">地上 約25m</span>
+              <h3><span class="step-no">手順 一</span>切る前に、まず吊ります</h3>
+              <p>順番が逆です。チェーンソーを入れる前に、切る枝へロープをかけ、落ちる先と降ろす道筋を決めます。枝がどこへ行くか分からないまま切ることは、決してありません。</p>
+              <p>この一手間があるからこそ、屋根の真上でも、植木の上でも切ることができます。</p>
+            </div>
+          </article>
+
+          <article class="work reveal">
+            <div class="work-photo"><img src="../assets/chapters/branch-cut.jpg" alt="樹冠の中でチェーンソーで枝を切り、切り口から枝が離れる瞬間" loading="lazy" /></div>
+            <div>
+              <span class="alt-mark">地上 約16m</span>
+              <h3><span class="step-no">手順 二</span>少しずつ、小さく切ります</h3>
+              <p>一度に切り離すのは、人が抱えられる大きさまでに限ります。樹冠の枝から順に、幹は輪切りにしながら、少しずつ木を低くしていきます。</p>
+              <p>大きな木ほど時間がかかりますが、この「少しずつ」が事故を防ぐ一番の方法です。</p>
+            </div>
+          </article>
+
+          <article class="work reveal">
+            <div class="work-photo"><img src="../assets/chapters/lowering.jpg" alt="ロープで吊った幹の輪切りを、地上の作業員が手で受けて誘導している" loading="lazy" /></div>
+            <div>
+              <span class="alt-mark">地上 約2m</span>
+              <h3><span class="step-no">手順 三</span>受け止めて、静かに降ろします</h3>
+              <p>切った材はロープで受け止め、地上の作業員が声をかけながら誘導します。屋根も、塀も、庭石もかすめることなく降ろします。最後の一本が地面に着くまでが、空の仕事です。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- cases -->
+    <section id="cases" class="bg-band">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">其の二 ・ こんな木</div>
+          <h2>このような木が、私たちの仕事です</h2>
+          <p>「これは、どうやって切るのだろう」と思うような木は、大抵が特殊伐採の対象です。たとえば、次のような木です。</p>
+        </div>
+        <ul class="sit-list">
+          <li class="reveal"><span class="n">一</span><h3>倒すスペースがない木</h3><p>家の間や狭い庭、路地の奥など、倒す方向に空きがない木は、上から解体していくしかありません。</p></li>
+          <li class="reveal"><span class="n">二</span><h3>屋根や電線にかかった木</h3><p>枝が屋根の上まで伸び、電線に触れているなど、落とせば壊れてしまうものが真下にある木です。</p></li>
+          <li class="reveal"><span class="n">三</span><h3>枯れて、倒れかけの木</h3><p>幹の中が空洞になっていたり、根元が腐っていたりする木です。放っておくと台風で倒れるおそれがあるため、倒れる前に始末します。</p></li>
+          <li class="reveal"><span class="n">四</span><h3>崖や斜面に立つ木</h3><p>重機を横付けできない場所です。人はロープで入ることができますので、足場の悪い場所ほど向いています。</p></li>
+          <li class="reveal"><span class="n">五</span><h3>隣の敷地へ越境した木</h3><p>枝が境界を越えて伸びてしまった木です。作業の前に、お隣への声かけの進め方も含めてご相談に乗ります。</p></li>
+          <li class="reveal"><span class="n">六</span><h3>空き家の庭で育ちすぎた木</h3><p>誰も住んでいない家の庭木が、建物より大きくなってしまった木です。遠方にお住まいの方からのご依頼も多い仕事です。</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- steps -->
+    <section id="steps">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">其の三 ・ 段取り</div>
+          <h2>当日の段取り ― 空から地面まで</h2>
+          <p>作業の日は、木の上と地面で声をかけ合いながら、一本の木を上から順に無くしていきます。</p>
+        </div>
+        <div class="descent" id="descent">
+          <div class="line-v" aria-hidden="true"><i id="descentFill"></i></div>
+          <div class="dstep reveal"><div class="pin">登</div><h3>木に登る<span class="m">地上 30m</span></h3><p>ロープを樹冠にかけ、胸元のロープランナーで昇降を支えながら、道具を持って登ります。実際には30メートル前後まで登ることもございます。登る前の道具点検と、木の状態の確認が最初の仕事です。</p></div>
+          <div class="dstep reveal"><div class="pin">枝</div><h3>枝を吊って落とす<span class="m">地上 20m</span></h3><p>樹冠の枝から順に、ロープで吊って切り離し、地面へ降ろします。下にあるものを避けながら、一枝ずつ。</p></div>
+          <div class="dstep reveal"><div class="pin">幹</div><h3>幹を輪切りにして降ろす<span class="m">地上 10m</span></h3><p>枝が無くなったら幹だけが残ります。輪切りにしてはロープで降ろし、少しずつ背を低くしていきます。</p></div>
+          <div class="dstep reveal"><div class="pin">倒</div><h3>最後の一本を倒す<span class="m">地上 3m</span></h3><p>手で扱える高さまで下がったら、残りを根元から倒します。ここまで来れば、ふつうの伐採と同じです。</p></div>
+          <div class="dstep ground reveal"><div class="pin">地</div><h3>片付けて、地面に戻す<span class="m">地上 0m</span></h3><p>切った材の搬出、枝葉の処分、周りの清掃まで。切り株をどうするかは、事前の相談で決めておきます。</p></div>
+        </div>
+        <figure style="margin:0">
+          <div class="descent-photo reveal"><img src="../assets/chapters/stump.jpg" alt="伐採後に残った切り株の年輪" loading="lazy" /></div>
+          <figcaption class="reveal">仕事の終わりは、いつも地面です。年輪の数だけ、その場所で生きてきた木でした。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- price -->
+    <section id="price" class="bg-band">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">其の四 ・ 料金</div>
+          <h2>料金は、現場で決まります</h2>
+          <p>特殊伐採には「一本いくら」という言い方がなじみません。同じ高さの木でも、下に屋根があるかどうかで手間が大きく異なるからです。お見積は、次の点を確認して作成します。</p>
+        </div>
+        <div class="factors">
+          <div class="factor reveal"><h3>木の高さと太さ</h3><p>高いほど、太いほど、切る回数と降ろす回数が増えます。登る前の見立てで、おおよその目安はお伝えできます。</p></div>
+          <div class="factor reveal"><h3>下に何があるか</h3><p>屋根、電線、庭木、石灯籠などです。守るものが多いほど、一つひとつを小さく、慎重に降ろすことになります。</p></div>
+          <div class="factor reveal"><h3>搬出の距離</h3><p>切った材を車まで運ぶ距離と、道の状態です。路地の奥や坂道では、その分の人手がかかります。</p></div>
+          <div class="factor reveal"><h3>切り株と処分</h3><p>切り株を残すか、掘り起こすかによっても変わります。材や枝葉の処分の方法でも変わります。薪として残される方もおられます。</p></div>
+        </div>
+        <div class="price-note reveal">
+          <p>現地確認とお見積は無料です。「いくらぐらいか」という目安だけでも、木の写真を<a href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener" style="color:var(--accent);font-weight:700;text-underline-offset:3px">LINEで送っていただければ</a>お答えします。お見積のあと、ご依頼になるかどうかはゆっくりお決めください。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- flow + faq -->
+    <section id="flow">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">其の五 ・ 流れ</div>
+          <h2>相談から片付けまで</h2>
+        </div>
+        <div class="flow reveal">
+          <div class="f"><span class="k">一 ・ 相談</span><h3>電話かLINEで</h3><p>木の場所と、困っていることを教えてください。写真があると話が早いです。</p></div>
+          <div class="f"><span class="k">二 ・ 見積</span><h3>現地を見て、見積</h3><p>実際に木を見て、作業の段取りと金額を出します。ここまで無料です。</p></div>
+          <div class="f"><span class="k">三 ・ 作業</span><h3>日を決めて、作業</h3><p>近隣への挨拶をしてから始めます。雨や強風の日は、安全のため順延します。</p></div>
+          <div class="f"><span class="k">四 ・ 完了</span><h3>片付けて、確認</h3><p>搬出と清掃が終わったら、一緒に仕上がりを確認していただいて完了です。</p></div>
+        </div>
+
+        <div class="sec-head reveal" style="margin-top:76px" id="faq">
+          <div class="no">其の六 ・ 質問</div>
+          <h2>よく聞かれること</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary><span class="q">問</span>クレーンが入らない細い路地でも、できますか<span class="plus">＋</span></summary>
+            <div class="a"><p>できます。特殊伐採の道具は、人の背中で運べるものばかりです。車が入れなくても、人が入れる場所であれば、大抵は作業できます。</p></div>
+          </details>
+          <details>
+            <summary><span class="q">問</span>隣の家に、枝が落ちたりしませんか<span class="plus">＋</span></summary>
+            <div class="a"><p>枝は必ずロープで吊ってから切ります。切り離した枝が自由に落ちる場面は作りません。それでも万一に備えて保険には入っていますし、作業前には近隣へご挨拶に伺います。</p></div>
+          </details>
+          <details>
+            <summary><span class="q">問</span>見積だけでも大丈夫ですか<span class="plus">＋</span></summary>
+            <div class="a"><p>大丈夫です。現地確認・見積は無料ですし、写真だけの概算なら<a href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener" style="color:var(--accent);font-weight:700;text-underline-offset:3px">LINE</a>でもお答えします。見積のあとに断っていただいても構いません。</p></div>
+          </details>
+          <details>
+            <summary><span class="q">問</span>切った木は、どうなりますか<span class="plus">＋</span></summary>
+            <div class="a"><p>基本的には搬出して処分まで行います。良い材は薪として残すこともできますので、ご希望があればお見積のときに教えてください。</p></div>
+          </details>
+          <details>
+            <summary><span class="q">問</span>雨の日はどうなりますか<span class="plus">＋</span></summary>
+            <div class="a"><p>木の上での仕事は、濡れると足元が滑って危険です。雨や強風のときは無理をせず、日を改めます。その場合は、前日までにご連絡します。</p></div>
+          </details>
+          <details>
+            <summary><span class="q">問</span>切り株は残りますか<span class="plus">＋</span></summary>
+            <div class="a"><p>伐採では地際で切りますので、切り株は残ります。掘り起こしてなくすこともできますが、手間がかかりますので、別途のお見積になります。</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- chapters -->
+    <section class="bg-band" id="chapters" style="padding-top:70px">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">竜樹伐採の三つの仕事</div>
+          <h2>仕事は、三つに分けて考えています</h2>
+          <p>木の始末は、場所と高さでやり方が変わります。<span class="nb">竜樹伐採</span>では仕事を三つに分け、それぞれ専用のページで詳しくご紹介しています。</p>
+        </div>
+        <div class="chapters">
+          <a class="chap current reveal" href="#top" aria-current="page">
+            <span class="state">このページ</span>
+            <div class="kanji">空</div>
+            <h3>特殊伐採 ― 空の仕事</h3>
+            <p>木に登って、上から解体していきます。クレーンの入らない場所、落とせない場所の仕事です。</p>
+          </a>
+          <a class="chap dim reveal" href="../tree-felling/">
+            <span class="state">別の章</span>
+            <div class="kanji">終</div>
+            <h3>伐採 ― 終の仕事</h3>
+            <p>木の一生を終わらせる仕事です。根元から倒して、地面で始末します。空き地や山林など、倒す場所がある所の仕事です。</p>
+          </a>
+          <a class="chap dim reveal" href="../tree-pruning/">
+            <span class="state">別の章</span>
+            <div class="kanji">生</div>
+            <h3>剪定 ― 生の仕事</h3>
+            <p>切るのは、生かすためです。庭木を整えて、来年も再来年もこの木と付き合っていく仕事です。</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div class="no">相談</div>
+          <h2>その木、一度見せてください</h2>
+          <p>「切れるのだろうか」と思っている段階で大丈夫です。写真を送っていただければ、切れるかどうかと、おおよその目安をお答えします。</p>
+        </div>
+        <div class="contact-grid">
+          <div class="reveal">
+            <div style="font-size:13px;letter-spacing:.24em;color:#c3cdc9">電話での相談</div>
+            <a class="tel-big" href="tel:09020147439">090-2014-7439</a>
+            <p class="tel-note">作業中は出られないことがあります。折り返しますので、留守番電話にひと言残してください。</p>
+            <div class="contact-actions">
+              <a class="btn btn-line" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener" style="min-width:210px">LINEで写真を送る</a>
+              <a class="btn" href="mailto:ryuzyuchop@gmail.com" style="background:transparent;border-color:rgba(255,255,255,.4);color:#f4f1e6">メールで相談</a>
+            </div>
+            <p style="color:#c3cdc9;font-size:13.5px;margin:20px 0 0">LINEでのご相談は、上のボタンを押して友だち追加のうえ、木全体が写った写真と、木のある場所をお送りください。内容を確認し、切れるかどうかと概算の目安、現地確認の日程をご案内いたします。</p>
+            <p style="color:#c3cdc9;font-size:13.5px;margin:10px 0 0">対応エリアは、奈良市を中心に近隣の市町村までです。遠方の空き家についてのご相談も承ります。</p>
+          </div>
+          <figure class="reveal" style="margin:0">
+            <div class="contact-photo"><img src="../assets/chapters/climber.jpg" alt="幹に登った作業員を見上げた写真" loading="lazy" /></div>
+            <figcaption>まずは、木の全体が写った写真を一枚お送りください。それでおおよそのことが分かります。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="fbrand"><span class="nb">竜樹伐採</span> ― 奈良市の高木・危険木・空き家の伐採と剪定</div>
+        <p>特殊伐採（空）／伐採（終）／剪定（生）　・　電話 <span class="nb">090-2014-7439</span>　・　メール ryuzyuchop@gmail.com</p>
+        
+      </div>
+    </footer>
+
+    <div class="sticky-cta">
+      <a class="btn btn-line" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener">LINEで相談</a>
+      <a class="btn btn-tel" href="tel:09020147439">電話する</a>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <script>
+      (function(){
+        var MAX_ALT = 30.0;
+        var railAlt = document.getElementById('railAlt'),
+            railFill = document.getElementById('railFill'),
+            railDot = document.getElementById('railDot'),
+            railZone = document.getElementById('railZone'),
+            chipAlt = document.getElementById('chipAlt'),
+            chipZone = document.getElementById('chipZone'),
+            chip = document.querySelector('.alt-chip'),
+            heroEl = document.querySelector('.hero'),
+            descent = document.getElementById('descent'),
+            descentFill = document.getElementById('descentFill'),
+            bgWorld = document.getElementById('bgWorld'),
+            bgTrack = document.getElementById('bgTrack'),
+            bgClimber = document.getElementById('bgClimber2'),
+            bgBranch = document.getElementById('bgBranch');
+        var ticking = false;
+        function zoneOf(a){
+          if (a > 22) return '樹冠';
+          if (a > 14) return '蔓と枯れ枝';
+          if (a > 8) return 'きのこと裂け目';
+          if (a > 0.4) return '虫食い・もうすぐ地面';
+          return '地面';
+        }
+        function update(){
+          ticking = false;
+          var doc = document.documentElement;
+          var max = doc.scrollHeight - window.innerHeight;
+          var p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+          var alt = MAX_ALT * (1 - p);
+          var txt = alt.toFixed(1) + 'm';
+          railAlt.textContent = txt;
+          chipAlt.textContent = txt;
+          var z = zoneOf(alt);
+          railZone.textContent = z;
+          chipZone.textContent = z;
+          railFill.style.height = ((1 - p) * 100) + '%';
+          railDot.style.top = (p * 100) + '%';
+          /* background world: the trunk slides past as the page descends,
+             the climber travels down the rope, and the dead branch snaps
+             when the climber draws level with it. */
+          if (bgTrack){
+            var travel = window.innerHeight * 2.4; /* 340vh track - 100vh view */
+            bgTrack.style.transform = 'translateY(' + (-p * travel) + 'px)';
+          }
+          if (bgClimber){
+            bgClimber.style.top = (18 + p * 42) + '%';
+          }
+          if (bgBranch && bgWorld){
+            if (p >= 0.44){
+              bgBranch.classList.add('broken');
+              bgWorld.classList.add('branch-broken');
+            } else if (p < 0.40){
+              bgBranch.classList.remove('broken');
+              bgWorld.classList.remove('branch-broken');
+            }
+          }
+          if (chip && heroEl){
+            var hr = heroEl.getBoundingClientRect();
+            var hideChip = hr.bottom > window.innerHeight * 0.5 && hr.top < window.innerHeight;
+            chip.classList.toggle('chip-hidden', hideChip);
+          }
+          if (descent && descentFill){
+            var r = descent.getBoundingClientRect();
+            var dp = (window.innerHeight * 0.72 - r.top) / r.height;
+            dp = Math.min(1, Math.max(0, dp));
+            descentFill.style.transform = 'scaleY(' + dp + ')';
+          }
+        }
+        window.addEventListener('scroll', function(){
+          if (!ticking){ ticking = true; requestAnimationFrame(update); }
+        }, { passive: true });
+        window.addEventListener('resize', update);
+        update();
+
+        var toast = document.getElementById('toast'), timer = null;
+        function showToast(msg){
+          toast.textContent = msg;
+          toast.classList.add('show');
+          clearTimeout(timer);
+          timer = setTimeout(function(){ toast.classList.remove('show'); }, 3400);
+        }
+      })();
+    </script>
+  </body>
+</html>
