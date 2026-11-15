@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>剪定 ― 生｜竜樹伐採</title>
+<link rel="canonical" href="https://ryujubassai.com/tree-pruning/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="剪定 ― 生｜竜樹伐採">
+<meta property="og:description" content="奈良市の剪定は竜樹伐採へ。三つの仕事の第二章「生」。木を終わらせるのではなく、この先も庭で生き続けてもらうための剪定について、考え方・時期・料金の決め方をご案内します。">
+<meta property="og:url" content="https://ryujubassai.com/tree-pruning/">
+<meta property="og:image" content="https://ryujubassai.com/assets/chapters/pine.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="竜樹伐採">
+    <meta name="description" content="奈良市の剪定は竜樹伐採へ。三つの仕事の第二章「生」。木を終わらせるのではなく、この先も庭で生き続けてもらうための剪定について、考え方・時期・料金の決め方をご案内します。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&family=Shippori+Mincho+B1:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root{
+        --paper:#f6f4ec;
+        --paper-2:#efece0;
+        --ink:#26301f;
+        --ink-soft:#4c5844;
+        --moss:#3d5a34;
+        --moss-deep:#22331d;
+        --leaf:#6d8f4e;
+        --bud:#a8bf7a;
+        --line:#cfd2bd;
+        --card:#fbfaf5;
+        --accent:#b3542e;
+        --line-green:#06c755;
+        --shadow:0 18px 40px rgba(34,51,29,.14);
+        --serif:"Zen Old Mincho","Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+        --sans:"Zen Kaku Gothic Antique","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+      }
+      @media (prefers-color-scheme: dark){
+        :root{
+          --paper:#141a11;
+          --paper-2:#1a2114;
+          --ink:#e8ebdb;
+          --ink-soft:#b7bfa8;
+          --moss:#8fae7c;
+          --moss-deep:#0e140c;
+          --leaf:#9cbd77;
+          --bud:#c2d69b;
+          --line:#39432f;
+          --card:#1d2517;
+          --accent:#d98a5f;
+          --shadow:0 18px 40px rgba(0,0,0,.45);
+        }
+      }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      body{
+        margin:0;background:var(--paper);color:var(--ink);
+        font-family:var(--sans);font-size:16px;line-height:1.9;letter-spacing:.02em;
+        -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+        font-feature-settings:"palt" 1,"kern" 1;
+      }
+      img{display:block;max-width:100%}
+      a{color:inherit}
+      .brand{white-space:nowrap}
+      .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+      button,[role="button"],summary{min-height:2.75rem}
+
+      /* ---------- header ---------- */
+      header{
+        position:fixed;inset:0 0 auto 0;z-index:50;
+        background:color-mix(in srgb, var(--paper) 88%, transparent);
+        backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+        border-bottom:1px solid var(--line);
+      }
+      .header-in{max-width:1080px;margin:0 auto;padding:0 22px;height:60px;display:flex;align-items:center;gap:18px}
+      .logo{font-family:var(--serif);font-weight:900;font-size:1.18rem;letter-spacing:.16em;text-decoration:none;font-feature-settings:"palt" 1}
+      .logo small{display:block;font-family:var(--sans);font-weight:500;font-size:.62rem;letter-spacing:.32em;color:var(--moss);line-height:1.2}
+      nav.main{margin-left:auto;display:none;gap:26px;font-size:.86rem}
+      nav.main a{text-decoration:none;color:var(--ink-soft);padding:10px 2px}
+      nav.main a:hover{color:var(--moss)}
+      .header-actions{margin-left:auto;display:flex;align-items:center;gap:8px}
+      .tel-btn{
+        display:inline-flex;align-items:center;gap:8px;
+        background:var(--moss-deep);color:#f2f4e6;text-decoration:none;
+        font-weight:700;font-size:.9rem;letter-spacing:.06em;
+        padding:9px 16px;border-radius:999px;min-height:2.75rem;white-space:nowrap;
+      }
+      .line-btn{
+        display:none;align-items:center;gap:8px;
+        background:var(--line-green);color:#fff;text-decoration:none;
+        font-weight:700;font-size:.9rem;letter-spacing:.04em;
+        padding:9px 16px;border-radius:999px;min-height:2.75rem;white-space:nowrap;
+      }
+      .line-btn:hover{filter:brightness(1.05)}
+      @media(min-width:640px){ .line-btn{display:inline-flex} }
+      @media(min-width:860px){ nav.main{display:flex} .header-actions{margin-left:0} }
+      @media (prefers-color-scheme: dark){ .tel-btn{background:var(--leaf);color:#131a10} }
+      .logo,.header-actions,.tel-btn,.line-btn{flex:none}
+      @media(max-width:639px){
+        .header-in{padding:0 14px;gap:10px}
+        .logo{font-size:1.02rem;letter-spacing:.12em}
+        .logo small{font-size:.56rem;letter-spacing:.24em}
+        .tel-btn{padding:8px 18px;font-size:.92rem;letter-spacing:.1em}
+        .hero-kanji{top:78px}
+      }
+
+      /* ---------- hero ---------- */
+      .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--moss-deep)}
+      .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+      .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,24,12,.18) 0%,rgba(16,24,12,0) 34%,rgba(16,24,12,.55) 76%,rgba(14,20,10,.86) 100%)}
+      .hero-kanji{
+        position:absolute;top:9vh;right:4vw;z-index:2;
+        writing-mode:vertical-rl;font-family:var(--serif);font-weight:900;
+        font-size:clamp(7rem,26vw,17rem);line-height:1;padding:.08em .12em;color:rgba(244,247,232,.96);
+        text-shadow:0 6px 44px rgba(10,16,6,.45);letter-spacing:.04em;
+        font-feature-settings:"palt" 1;
+      }
+      .hero-kanji .reading{
+        font-size:clamp(.8rem,2.4vw,1rem);letter-spacing:.9em;color:rgba(244,247,232,.85);
+        font-family:var(--sans);font-weight:500;margin-top:14px;
+      }
+      .hero-body{position:relative;z-index:3;width:100%;max-width:1080px;margin:0 auto;padding:120px 22px 56px;color:#f4f6ea}
+      .chapter{display:inline-flex;align-items:center;gap:12px;font-size:.8rem;letter-spacing:.34em;font-weight:500}
+      .chapter::before{content:"";width:38px;height:1px;background:var(--bud)}
+      .hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(2.6rem,8.4vw,4.6rem);line-height:1.32;margin:.35em 0 .3em;letter-spacing:.08em;font-feature-settings:"palt" 1}
+      .hero h1 .thin{font-weight:700;font-size:.52em;letter-spacing:.22em;display:block;margin-bottom:.45em;color:#dfe7c8}
+      .hero p.lead{max-width:620px;font-size:clamp(.98rem,2.6vw,1.08rem);line-height:2;color:#eef1df;margin:0}
+      .hero-meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+      .hero-meta span{border:1px solid rgba(244,246,234,.5);border-radius:999px;padding:7px 15px;font-size:.8rem;letter-spacing:.08em}
+      .hero-cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px}
+      .hero-cta a{
+        display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;
+        border-radius:999px;padding:13px 24px;min-height:3.3rem;font-size:.98rem;letter-spacing:.03em;
+      }
+      .hero-cta .h-line{background:var(--line-green);color:#fff;box-shadow:0 10px 28px rgba(6,199,85,.35)}
+      .hero-cta .h-tel{background:rgba(18,26,13,.62);color:#f4f6ea;border:1px solid rgba(244,246,234,.85);backdrop-filter:blur(4px);white-space:nowrap}
+      .hero-cta .h-line{white-space:nowrap}
+      .hero-cta .small{font-size:.72rem;font-weight:500;letter-spacing:.08em;opacity:.85}
+      .text-line-link{color:var(--moss);font-weight:700;text-decoration:underline;text-decoration-color:var(--line-green);text-decoration-thickness:2px;text-underline-offset:3px}
+      .contact .text-line-link,.faq .text-line-link{color:inherit}
+      .scroll-cue{position:absolute;right:20px;bottom:18px;z-index:3;color:rgba(244,246,234,.8);font-size:.68rem;letter-spacing:.4em;text-align:center}
+      .scroll-cue::after{content:"";display:block;width:1px;height:34px;margin:8px auto 0;background:linear-gradient(rgba(244,246,234,.8),transparent);animation:cue 2.4s ease-in-out infinite}
+      @keyframes cue{0%,100%{transform:scaleY(.4);transform-origin:top;opacity:.4}50%{transform:scaleY(1);opacity:1}}
+      @media (prefers-reduced-motion: reduce){ .scroll-cue::after{animation:none} html{scroll-behavior:auto} }
+
+      /* ---------- trilogy nav ---------- */
+      .trio{background:var(--moss-deep);color:#edf0df}
+      .trio-in{max-width:1080px;margin:0 auto;padding:0 22px;display:grid;grid-template-columns:1fr}
+      .trio a,.trio .now{
+        display:flex;align-items:baseline;gap:16px;padding:20px 4px;text-decoration:none;
+        border-bottom:1px solid rgba(237,240,223,.16);
+      }
+      .trio .k{font-family:var(--serif);font-size:2.1rem;font-weight:900;line-height:1;font-feature-settings:"palt" 1}
+      .trio .t{font-weight:700;letter-spacing:.14em}
+      .trio .d{font-size:.82rem;color:#c6cdb2;line-height:1.7}
+      .trio .tag{margin-left:auto;font-size:.68rem;letter-spacing:.24em;border:1px solid rgba(237,240,223,.4);border-radius:999px;padding:4px 10px;white-space:nowrap}
+      .trio .now{background:rgba(168,191,122,.12);box-shadow:inset 3px 0 0 var(--bud)}
+      .trio .now .k{color:var(--bud)}
+      @media(min-width:860px){
+        .trio-in{grid-template-columns:repeat(3,1fr)}
+        .trio a,.trio .now{flex-direction:column;gap:8px;padding:28px 22px;border-bottom:none;border-right:1px solid rgba(237,240,223,.16)}
+        .trio .tag{margin-left:0}
+      }
+
+      /* ---------- toc ---------- */
+      section[id],div[id]{scroll-margin-top:76px}
+      .toc{background:var(--paper);padding:64px 0 10px}
+      .toc-box{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:30px 28px 14px;box-shadow:var(--shadow)}
+      .toc-head{display:flex;align-items:baseline;gap:16px;margin-bottom:8px;flex-wrap:wrap}
+      .toc-head h2{font-family:var(--serif);font-weight:900;font-size:1.45rem;letter-spacing:.12em;margin:0;font-feature-settings:"palt" 1}
+      .toc-head .en{font-size:.68rem;letter-spacing:.32em;color:var(--leaf);font-weight:700}
+      .toc-head p{width:100%;margin:2px 0 0;color:var(--ink-soft);font-size:.9rem}
+      .toc-list{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:0}
+      @media(min-width:760px){ .toc-list{grid-template-columns:1fr 1fr;column-gap:44px} }
+      .toc-list li{border-top:1px solid var(--line)}
+      .toc-list a{
+        display:flex;align-items:center;gap:14px;text-decoration:none;
+        padding:15px 4px;min-height:3.4rem;font-weight:700;font-size:.98rem;letter-spacing:.02em;
+      }
+      .toc-list a:hover{color:var(--moss)}
+      .toc-list a:hover .toc-arrow{transform:translateX(3px);color:var(--moss)}
+      .toc-num{font-family:var(--serif);color:var(--leaf);font-weight:700;font-size:.92rem;white-space:nowrap;min-width:1.6em;text-align:center}
+      .toc-arrow{margin-left:auto;color:var(--ink-soft);font-size:1.05rem;line-height:1;transition:transform .2s ease}
+
+      /* ---------- sections ---------- */
+      section{padding:92px 0}
+      .sec-head{margin-bottom:44px}
+      .sec-head .no{font-family:var(--serif);color:var(--leaf);font-size:.95rem;letter-spacing:.3em}
+      .sec-head h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.75rem,5vw,2.45rem);line-height:1.55;margin:.25em 0 .35em;letter-spacing:.06em;font-feature-settings:"palt" 1}
+      .sec-head p{color:var(--ink-soft);max-width:640px;margin:0}
+      .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+      .reveal.on{opacity:1;transform:none}
+      @media (prefers-reduced-motion: reduce){ .reveal{opacity:1;transform:none;transition:none} }
+
+      /* concept */
+      .concept{background:var(--paper)}
+      .concept-grid{display:grid;gap:40px}
+      @media(min-width:860px){ .concept-grid{grid-template-columns:1.05fr .95fr;gap:56px;align-items:start} }
+      .concept figure{margin:0;border-radius:6px;overflow:hidden;box-shadow:var(--shadow)}
+      .concept figure img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3.1}
+      .concept figcaption{font-size:.78rem;color:var(--ink-soft);padding-top:10px;background:var(--paper);box-shadow:none}
+      figure:has(figcaption){box-shadow:none}
+      figure:has(figcaption) img{border-radius:6px;box-shadow:var(--shadow)}
+      .concept .body p{margin:0 0 1.4em}
+      .concept .body p:first-of-type::first-letter{
+        font-family:var(--serif);font-size:2.7em;float:left;line-height:1.02;padding:.04em .18em 0 0;color:var(--moss);font-weight:900;
+      }
+      .points{margin-top:34px;border-top:1px solid var(--line)}
+      .points li{list-style:none;display:flex;gap:18px;padding:18px 2px;border-bottom:1px solid var(--line)}
+      .points{padding:0}
+      .points .n{font-family:var(--serif);color:var(--leaf);font-weight:700;font-size:1.05rem;white-space:nowrap;padding-top:2px}
+      .points b{display:block;font-size:.98rem;margin-bottom:2px}
+      .points p{margin:0;color:var(--ink-soft);font-size:.92rem;line-height:1.85}
+
+      /* services */
+      .services{background:var(--paper-2)}
+      .svc-grid{display:grid;gap:0;border-top:1px solid var(--line)}
+      @media(min-width:760px){ .svc-grid{grid-template-columns:1fr 1fr} }
+      .svc{padding:30px 26px 30px 2px;border-bottom:1px solid var(--line)}
+      @media(min-width:760px){ .svc:nth-child(odd){padding-right:38px} .svc:nth-child(even){padding-left:38px;border-left:1px solid var(--line)} }
+      .svc h3{font-family:var(--serif);font-size:1.24rem;font-weight:900;letter-spacing:.04em;margin:0 0 8px;display:flex;align-items:baseline;gap:12px;font-feature-settings:"palt" 1}
+      .svc h3 .en{font-family:var(--sans);font-size:.66rem;letter-spacing:.3em;color:var(--leaf);font-weight:700}
+      .svc p{margin:0;color:var(--ink-soft);font-size:.94rem}
+
+      /* photo band */
+      .band{padding:0;display:grid}
+      @media(min-width:760px){ .band{grid-template-columns:1.35fr 1fr} }
+      .band figure{margin:0;position:relative;overflow:hidden}
+      .band img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+      .band .tall img{aspect-ratio:4/4.05}
+      @media(min-width:760px){ .band img{aspect-ratio:auto;height:100%} .band figure{min-height:420px} }
+      .band figcaption{
+        position:absolute;left:0;right:0;bottom:0;padding:34px 20px 14px;color:#f2f4e6;font-size:.8rem;letter-spacing:.06em;
+        background:linear-gradient(transparent,rgba(14,20,10,.72));
+      }
+
+      /* seasons */
+      .season-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+      .season-tabs button{
+        font-family:var(--serif);font-size:1.05rem;font-weight:700;letter-spacing:.24em;
+        background:transparent;color:var(--ink-soft);border:1px solid var(--line);
+        border-radius:999px;padding:10px 26px;cursor:pointer;min-height:3rem;
+      }
+      .season-tabs button[aria-selected="true"]{background:var(--moss);border-color:var(--moss);color:#f4f6ea}
+      @media (prefers-color-scheme: dark){ .season-tabs button[aria-selected="true"]{color:#141b10} }
+      .season-panel{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:32px 28px;box-shadow:var(--shadow)}
+      .season-panel h3{font-family:var(--serif);margin:0 0 6px;font-size:1.38rem;font-weight:900;letter-spacing:.04em;font-feature-settings:"palt" 1}
+      .season-panel .months{color:var(--leaf);font-size:.8rem;letter-spacing:.24em;font-weight:700}
+      .season-panel p{margin:.8em 0 0;color:var(--ink-soft)}
+      .season-panel ul{margin:16px 0 0;padding:0;list-style:none}
+      .season-panel li{padding:9px 0 9px 22px;position:relative;border-top:1px dashed var(--line);font-size:.94rem}
+      .season-panel li::before{content:"";position:absolute;left:2px;top:1.35em;width:8px;height:8px;border-radius:50%;background:var(--bud)}
+
+      /* price */
+      .price{background:var(--paper-2)}
+      .price-grid{display:grid;gap:36px}
+      @media(min-width:860px){ .price-grid{grid-template-columns:1fr 1fr;gap:56px} }
+      .factors{margin:0;padding:0;list-style:none}
+      .factors li{display:flex;justify-content:space-between;gap:20px;padding:15px 2px;border-bottom:1px solid var(--line);font-size:.95rem}
+      .factors li b{font-family:var(--serif);white-space:nowrap}
+      .factors li span{color:var(--ink-soft);text-align:right}
+      .price .note{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:28px}
+      .price .note h3{font-family:var(--serif);margin:0 0 10px;font-size:1.22rem;font-weight:900;letter-spacing:.03em}
+      .price .note p{margin:0 0 1em;color:var(--ink-soft);font-size:.94rem}
+      .price .note p:last-child{margin-bottom:0}
+
+      /* flow */
+      .flow-list{margin:0;padding:0;list-style:none;position:relative}
+      .flow-list::before{content:"";position:absolute;left:19px;top:12px;bottom:12px;width:1px;background:var(--line)}
+      .flow-list li{display:flex;gap:22px;padding:20px 0;position:relative}
+      .flow-list .num{
+        flex:none;width:39px;height:39px;border-radius:50%;background:var(--paper);
+        border:1px solid var(--moss);color:var(--moss);font-family:var(--serif);font-weight:700;
+        display:flex;align-items:center;justify-content:center;position:relative;z-index:1;
+      }
+      .flow-list h3{margin:0 0 4px;font-size:1.04rem;font-family:var(--serif);font-weight:900;letter-spacing:.03em}
+      .flow-list p{margin:0;color:var(--ink-soft);font-size:.93rem;max-width:640px}
+
+      /* faq */
+      .faq{background:var(--paper-2)}
+      .faq details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin-bottom:12px;overflow:hidden}
+      .faq summary{
+        cursor:pointer;list-style:none;display:flex;align-items:center;gap:14px;
+        padding:18px 22px;font-weight:700;font-size:.98rem;min-height:3.4rem;
+      }
+      .faq summary::-webkit-details-marker{display:none}
+      .faq summary .q{font-family:var(--serif);color:var(--leaf);font-weight:700}
+      .faq summary .plus{margin-left:auto;font-family:var(--serif);font-size:1.3rem;color:var(--moss);transition:transform .3s}
+      .faq details[open ] summary .plus{transform:rotate(45deg)}
+      .faq .a{padding:0 22px 20px 52px;color:var(--ink-soft);font-size:.93rem}
+      .faq .a p{margin:0}
+
+      /* contact */
+      .contact{background:var(--moss-deep);color:#edf0df}
+      .contact h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.75rem,5vw,2.35rem);margin:.2em 0 .4em;line-height:1.55;letter-spacing:.05em;font-feature-settings:"palt" 1}
+      .contact p{color:#c9d0b4;max-width:600px}
+      .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+      .cta{
+        display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;
+        border-radius:999px;padding:14px 28px;min-height:3.4rem;font-size:1rem;letter-spacing:.04em;
+      }
+      .cta.tel{background:#f4f6ea;color:#22331d}
+      .cta.line{background:var(--line-green);color:#fff}
+      .cta .small{font-size:.72rem;font-weight:500;letter-spacing:.1em;opacity:.75}
+      .contact .fineprint{margin-top:22px;font-size:.78rem;color:#98a183}
+
+      footer{padding:38px 0 46px;font-size:.8rem;color:var(--ink-soft)}
+      footer .wrap{display:flex;flex-wrap:wrap;gap:10px 34px;align-items:baseline}
+      footer .fbrand{font-family:var(--serif);font-weight:900;color:var(--ink);font-size:.98rem;letter-spacing:.16em;font-feature-settings:"palt" 1}
+      footer p{width:100%;margin:8px 0 0;line-height:1.8}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-in">
+        <a class="logo" href="/"><span class="brand">竜樹伐採</span><small>RYUJU BASSAI</small></a>
+        <nav class="main" aria-label="ページ内案内">
+          <a href="#concept">「生」という仕事</a>
+          <a href="#services">できること</a>
+          <a href="#season">時期の目安</a>
+          <a href="#price">料金の考え方</a>
+          <a href="#faq">よくある質問</a>
+        </nav>
+        <div class="header-actions">
+          <a class="line-btn" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener noreferrer" aria-label="LINEで相談する（友だち追加）">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.55 7.4 8.32 8.05.32.07.77.22.88.5.1.26.07.66.03.93l-.14.84c-.04.26-.2 1.02.9.56 1.1-.47 5.93-3.46 8.08-5.91C21.55 12.74 22 11.47 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+            LINEで相談
+          </a>
+          <a class="tel-btn" href="tel:+819020147439" aria-label="電話する（090-2014-7439へ発信します）">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            電話する
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <div class="hero">
+        <img class="bg" src="../assets/chapters/pine.jpg" alt="庭園の大きな松に脚立をかけ、枝を透かす剪定作業の様子" />
+        <div class="hero-kanji" aria-hidden="true">生<span class="reading">セイ</span></div>
+        <div class="hero-body">
+          <span class="chapter"><span class="brand">竜樹伐採</span>の仕事　第二章</span>
+          <h1><span class="thin">剪定</span>切るのは、<br />終わらせるためでは<br />ありません。</h1>
+          <p class="lead">剪定は、<span class="brand">竜樹伐採</span>の仕事の中で、ただひとつ「この木に、これからも生き続けてもらうこと」を前提にした仕事です。伸びすぎた枝を落とすだけではなく、来年の芽の出方、庭への日当たり、風の通り道まで見て、残す枝と落とす枝を決めていきます。</p>
+          <div class="hero-cta">
+            <a class="h-line" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener noreferrer">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.55 7.4 8.32 8.05.32.07.77.22.88.5.1.26.07.66.03.93l-.14.84c-.04.26-.2 1.02.9.56 1.1-.47 5.93-3.46 8.08-5.91C21.55 12.74 22 11.47 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+              LINEで相談する <span class="small">写真を送るだけ</span>
+            </a>
+            <a class="h-tel" href="tel:+819020147439" aria-label="電話する（090-2014-7439へ発信します）">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              電話する
+            </a>
+          </div>
+          <div class="hero-meta">
+            <span>奈良市を中心に対応</span>
+            <span>見積り・現地確認は無料</span>
+            <span>切った枝はすべて持ち帰ります</span>
+          </div>
+        </div>
+        <div class="scroll-cue">SCROLL</div>
+      </div>
+
+      <!-- ============ 三章 ============ -->
+      <div class="trio" aria-label="三つの仕事">
+        <div class="trio-in">
+          <a href="../special-felling/">
+            <span class="k">空</span>
+            <span class="t">特殊伐採</span>
+            <span class="d">倒す場所のない木を、空の上で少しずつ切り下ろす仕事です。</span>
+            <span class="tag">第一章</span>
+          </a>
+          <div class="now" aria-current="page">
+            <span class="k">生</span>
+            <span class="t">剪定</span>
+            <span class="d">木を残し、これからも育て続けるための仕事です。このページでご案内します。</span>
+            <span class="tag">第二章・このページ</span>
+          </div>
+          <a href="../tree-felling/">
+            <span class="k">終</span>
+            <span class="t">伐採</span>
+            <span class="d">役目を終えた木を、安全に切り、跡をきれいにして終える仕事です。</span>
+            <span class="tag">第三章</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ============ 目次 ============ -->
+      <nav class="toc" id="toc" aria-label="目次">
+        <div class="wrap">
+          <div class="toc-box">
+            <div class="toc-head">
+              <h2>目次</h2>
+              <span class="en">CONTENTS</span>
+              <p>知りたい項目をタップすると、その場所まで移動いたします。料金だけをご覧になりたい方は「料金の考え方」からどうぞ。</p>
+            </div>
+            <ol class="toc-list">
+              <li><a href="#concept"><span class="toc-num">一</span>「生」という仕事<span class="toc-arrow" aria-hidden="true">→</span></a></li>
+              <li><a href="#services"><span class="toc-num">二</span>剪定でできること<span class="toc-arrow" aria-hidden="true">→</span></a></li>
+              <li><a href="#season"><span class="toc-num">三</span>時期の目安<span class="toc-arrow" aria-hidden="true">→</span></a></li>
+              <li><a href="#price"><span class="toc-num">四</span>料金の考え方<span class="toc-arrow" aria-hidden="true">→</span></a></li>
+              <li><a href="#flow"><span class="toc-num">五</span>ご依頼の流れ<span class="toc-arrow" aria-hidden="true">→</span></a></li>
+              <li><a href="#faq"><span class="toc-num">六</span>よくある質問<span class="toc-arrow" aria-hidden="true">→</span></a></li>
+              <li><a href="#sanzhou"><span class="toc-num">―</span>三つの仕事について<span class="toc-arrow" aria-hidden="true">→</span></a></li>
+              <li><a href="#contact"><span class="toc-num">―</span>ご相談・お見積り<span class="toc-arrow" aria-hidden="true">→</span></a></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ============ 生という仕事 ============ -->
+      <section class="concept" id="concept">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="no">一 ― 「生」という仕事</span>
+            <h2>剪定は、木の都合に合わせて<br />切る仕事です。</h2>
+          </div>
+          <div class="concept-grid">
+            <div class="body reveal">
+              <p>庭木の剪定というと、伸びた分を切りそろえる作業と思われがちです。けれども実際に切る場所を決めるのは、見た目の都合だけではありません。その枝を落とすと翌年どこから芽が出るか、残した枝に日が当たるようになるか、台風のときに風を受けすぎないか。木の側の都合を先に考えて、それから人の都合に合わせていくのが、<span class="brand">竜樹伐採</span>の剪定です。</p>
+              <p>切りすぎは、木を弱らせます。一度に枝を落としすぎると、木は失った葉を補おうとして勢いの強い枝を吹き出し、かえって形が崩れます。反対に、何年も放っておくと内側の枝が枯れ込み、病害虫の住みかになります。ちょうどよい間引きを、木の種類と状態に合わせて行うことが大切です。</p>
+              <p>先代から受け継いだ庭木や、家を建てたときに植えた記念樹など、切ってしまうには惜しい木ほど、剪定の出番です。残せるかどうか迷っている段階でも構いませんので、まずは木の状態を見せてください。</p>
+              <ul class="points">
+                <li>
+                  <span class="n">光</span>
+                  <div>
+                    <b>内側まで日を入れる</b>
+                    <p>枝が込み合うと、内側の葉に日が当たらず枯れていきます。枝を透かして光を通すと、木全体に葉が付き、形も保ちやすくなります。</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="n">風</span>
+                  <div>
+                    <b>風を通し、蒸れを防ぐ</b>
+                    <p>風通しの悪い樹は、病害虫が出やすくなります。風の通り道を作ることは、見た目以上に木の健康を保つうえで大切です。</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="n">時</span>
+                  <div>
+                    <b>来年の芽まで見て切る</b>
+                    <p>切った場所の近くから、翌年の芽が出ます。今年の形を整えるだけでなく、来年どう伸びるかを考えて切る位置を選びます。</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <figure class="reveal">
+              <img src="../assets/chapters/work1.webp" alt="仕立てられた松の並木で、脚立に登って剪定する職人たち" loading="lazy" />
+              <figcaption>松は年に一度の手入れで形を保ちます。ミドリ摘みと古葉取りが基本です。</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ できること ============ -->
+      <section class="services" id="services">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="no">二 ― 剪定でできること</span>
+            <h2>庭木一本から、庭全体の手入れまで。</h2>
+            <p>「どこまで頼めるのか分からない」というお声をよくいただきます。目安として、よくあるご依頼をまとめました。この中に無い内容でも、まずはご相談ください。</p>
+          </div>
+          <div class="svc-grid reveal">
+            <div class="svc">
+              <h3>透かし剪定 <span class="en">SUKASHI</span></h3>
+              <p>込み合った枝を間引き、樹の内側まで光と風が届くようにします。大きくなりすぎた庭木を、形を崩さずに一回り小さく見せたいときにも有効です。</p>
+            </div>
+            <div class="svc">
+              <h3>松の手入れ <span class="en">MATSU</span></h3>
+              <p>春のミドリ摘みと、秋から冬にかけての古葉取り・透かしを行います。松は手を入れる時期が決まっている木ですので、年一回の定期的な手入れをおすすめしています。</p>
+            </div>
+            <div class="svc">
+              <h3>花木・実のなる木 <span class="en">HANAKI</span></h3>
+              <p>梅、柿、ツツジ、サツキなどは、切る時期を間違えると翌年の花や実が付かなくなります。花芽の付く時期に合わせて、剪定の時期をご案内します。</p>
+            </div>
+            <div class="svc">
+              <h3>樹形の立て直し <span class="en">TATENAOSHI</span></h3>
+              <p>何年も手を入れていない木は、一度の剪定では元の形に戻りません。木に無理をさせないよう、数年かけて少しずつ整える計画を立てて進めます。</p>
+            </div>
+            <div class="svc">
+              <h3>生垣・低木の刈り込み <span class="en">IKEGAKI</span></h3>
+              <p>目隠しとしての役目を保ちながら、高さと厚みを整えます。道路側にはみ出して通行の妨げになっている場合も、合わせて整えます。</p>
+            </div>
+            <div class="svc">
+              <h3>大きくなりすぎた木の縮小 <span class="en">SHUKUSHO</span></h3>
+              <p>屋根や電線に届きそうな木は、切り戻して高さを抑えます。状態によっては、剪定よりも伐採した方がよい場合もあります。その判断も含めて、正直にお伝えします。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 写真 ============ -->
+      <div class="band" aria-label="作業の様子">
+        <figure>
+          <img src="../assets/chapters/work2.jpg" alt="住宅の庭で、脚立に登って松の剪定をする職人と、下で支える職人" loading="lazy" />
+          <figcaption>住宅のお庭での松の剪定。下の植木にはシートをかけて養生します。</figcaption>
+        </figure>
+        <figure class="tall">
+          <img src="../assets/chapters/work3.jpg" alt="庭木の下に黒いシートを敷き、脚立の上から剪定する職人" loading="lazy" />
+          <figcaption>切った枝はシートの上に落とし、その日のうちに片付けます。</figcaption>
+        </figure>
+      </div>
+
+      <!-- ============ 時期 ============ -->
+      <section id="season">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="no">三 ― 時期の目安</span>
+            <h2>切る時期は、木の種類で決まります。</h2>
+            <p>剪定はいつでもできる作業ではありません。木ごとに適した時期があり、それを外すと花が付かなかったり、木が弱ったりします。季節を選ぶと、その時期にできることをご覧いただけます。</p>
+          </div>
+          <div class="reveal">
+            <div class="season-tabs" role="tablist" aria-label="季節を選ぶ">
+              <button type="button" role="tab" id="tab-spring" aria-selected="true" aria-controls="panel-season" data-season="spring">春</button>
+              <button type="button" role="tab" id="tab-summer" aria-selected="false" aria-controls="panel-season" data-season="summer">夏</button>
+              <button type="button" role="tab" id="tab-autumn" aria-selected="false" aria-controls="panel-season" data-season="autumn">秋</button>
+              <button type="button" role="tab" id="tab-winter" aria-selected="false" aria-controls="panel-season" data-season="winter">冬</button>
+            </div>
+            <div class="season-panel" role="tabpanel" id="panel-season" aria-live="polite">
+              <span class="months" id="season-months"></span>
+              <h3 id="season-title"></h3>
+              <p id="season-text"></p>
+              <ul id="season-list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 料金 ============ -->
+      <section class="price" id="price">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="no">四 ― 料金の考え方</span>
+            <h2>金額は、木を見てから決めます。</h2>
+            <p>同じ「剪定」でも、脚立で届く低木と、木に登って作業する高木では、かかる手間が大きく異なります。一律の料金表では正確な金額が出せないため、<span class="brand">竜樹伐採</span>では現地を確認したうえで見積書をお渡ししています。</p>
+          </div>
+          <div class="price-grid reveal">
+            <ul class="factors">
+              <li><b>木の高さと本数</b><span>脚立で届くか、木に登るかで変わります</span></li>
+              <li><b>枝の量</b><span>何年手を入れていないかで変わります</span></li>
+              <li><b>剪定の内容</b><span>透かし、切り戻し、立て直しなど</span></li>
+              <li><b>処分する枝葉の量</b><span>持ち帰って処分する費用を含みます</span></li>
+              <li><b>庭の条件</b><span>脚立を立てられるか、搬出の距離など</span></li>
+            </ul>
+            <div class="note">
+              <h3>見積りは無料です</h3>
+              <p>現地で木の状態を確認し、残す枝と落とす枝をご説明したうえで、金額を書面でお出しします。ご納得いただいてから作業日を決めますので、その場でお決めいただく必要はありません。</p>
+              <p>お急ぎでなければ、庭の写真を<a class="text-line-link" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener noreferrer">LINEで送っていただく</a>方法もございます。写真だけでも、大まかな見通しと、剪定に適した時期をお伝えできます。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 流れ ============ -->
+      <section id="flow">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="no">五 ― ご依頼の流れ</span>
+            <h2>ご相談から作業完了まで。</h2>
+          </div>
+          <ol class="flow-list reveal">
+            <li>
+              <span class="num">1</span>
+              <div>
+                <h3>ご相談</h3>
+                <p>お電話、または<a class="text-line-link" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener noreferrer">LINE</a>で、木の種類とお困りの内容をお聞かせください。庭の写真を送っていただければ、その場で大まかな見通しをお伝えできます。</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">2</span>
+              <div>
+                <h3>現地確認と見積り</h3>
+                <p>実際に木を見て、状態をご説明します。残す枝と落とす枝の考え方をお伝えしたうえで、見積書をお渡しします。見積りは無料です。</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">3</span>
+              <div>
+                <h3>作業日の調整</h3>
+                <p>木の種類に合った時期をご提案し、ご都合のよい日を決めます。時期を待った方がよい木の場合は、その理由をご説明して時期を改めます。</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">4</span>
+              <div>
+                <h3>剪定作業</h3>
+                <p>近隣のお宅へご挨拶のうえ、下の植木や地面にシートを敷いて養生してから作業します。切り落とした枝と葉は、すべて持ち帰ります。</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">5</span>
+              <div>
+                <h3>確認とお支払い</h3>
+                <p>仕上がりを一緒にご確認いただきます。気になる場所があれば、その場で手直しします。問題がなければ完了となり、お支払いをお願いいたします。</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="faq" id="faq">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="no">六 ― よくある質問</span>
+            <h2>ご相談の前に。</h2>
+          </div>
+          <div class="reveal">
+            <details>
+              <summary><span class="q">問</span>剪定と伐採は、どう違うのですか。<span class="plus">＋</span></summary>
+              <div class="a"><p>伐採は木を根元から切って無くす作業で、剪定は木を残したまま枝を整える作業です。どちらにするか迷われている場合は、木の状態を見て、残せるかどうかから一緒に考えます。無理に残す方が危険な木もありますので、その場合は伐採をおすすめします。</p></div>
+            </details>
+            <details>
+              <summary><span class="q">問</span>切った枝の処分は含まれますか。<span class="plus">＋</span></summary>
+              <div class="a"><p>はい、含まれます。切り落とした枝や葉はすべて持ち帰って処分し、作業後は庭を掃いてお返しします。見積りの金額に追加で処分費がかかることはありません。</p></div>
+            </details>
+            <details>
+              <summary><span class="q">問</span>剪定は、どのくらいの頻度で必要ですか。<span class="plus">＋</span></summary>
+              <div class="a"><p>一般的な庭木で、年に一回が目安です。松は形を保つために年一回の手入れが大切です。伸びの早い木は、年二回に分けて少しずつ切る方が、一度に大きく切るよりも木の負担が小さくなります。</p></div>
+            </details>
+            <details>
+              <summary><span class="q">問</span>お隣の敷地にはみ出した枝も切れますか。<span class="plus">＋</span></summary>
+              <div class="a"><p>切れます。ただし、枝の位置によってはお隣の敷地側から作業する必要があり、その場合はお隣へのご挨拶や許可が要ります。現地確認の際に、段取りをご説明しますのでご安心ください。</p></div>
+            </details>
+            <details>
+              <summary><span class="q">問</span>留守の日に作業してもらえますか。<span class="plus">＋</span></summary>
+              <div class="a"><p>可能です。事前に作業する範囲をすり合わせ、当日は作業前と作業後の写真をお送りしてご報告します。お支払いの方法も含め、事前に取り決めをいたします。</p></div>
+            </details>
+            <details>
+              <summary><span class="q">問</span>見積りだけでも大丈夫ですか。<span class="plus">＋</span></summary>
+              <div class="a"><p>もちろんです。見積りは無料で、金額をご覧になってからお断りいただいても構いません。時期を待った方がよい場合は、そのことも合わせてお伝えします。</p></div>
+            </details>
+            <details>
+              <summary><span class="q">問</span>LINEで相談できますか。<span class="plus">＋</span></summary>
+              <div class="a"><p>はい、ご相談いただけます。<a class="text-line-link" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener noreferrer">友だち追加</a>のうえ、庭木の写真とお困りの内容をお送りください。写真だけでも、大まかな見通しと剪定に適した時期をお伝えできます。文章でのご相談も、そのままLINEでお送りいただけます。</p></div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 三章の説明 ============ -->
+      <section id="sanzhou">
+        <div class="wrap">
+          <div class="sec-head reveal">
+            <span class="no">三つの仕事について</span>
+            <h2><span class="brand">竜樹伐採</span>の仕事は、三つに分かれます。</h2>
+            <p>木一本にも、置かれている状況によって必要な仕事が異なります。<span class="brand">竜樹伐採</span>では、仕事の内容を「空」「生」「終」の三つに分けて、それぞれ専用のページでご案内しています。</p>
+          </div>
+          <div class="reveal">
+            <ul class="points" style="margin-top:0">
+              <li>
+                <span class="n">空</span>
+                <div>
+                  <b>第一章「空」― 特殊伐採</b>
+                  <p>家や電線に近く、倒す場所のない木を対象にした仕事です。木に登り、枝や幹を少しずつ切り分けて、ロープで静かに下ろします。</p>
+                </div>
+              </li>
+              <li>
+                <span class="n">生</span>
+                <div>
+                  <b>第二章「生」― 剪定（このページ）</b>
+                  <p>残したい木のための仕事です。光と風を通し、来年の芽の出方まで考えて枝を選び、木がこれからも庭で生き続けられる形に整えます。</p>
+                </div>
+              </li>
+              <li>
+                <span class="n">終</span>
+                <div>
+                  <b>第三章「終」― 伐採</b>
+                  <p>枯れて危険になった木、空き家の庭木、竹林など、役目を終えた木を対象にした仕事です。安全に切り倒し、切り株の処理と片付けまで行います。</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ お問い合わせ ============ -->
+      <section class="contact" id="contact">
+        <div class="wrap">
+          <span class="chapter">ご相談・見積り</span>
+          <h2>その木は、残せるかもしれません。</h2>
+          <p>「大きくなりすぎたから切るしかない」と思っていた木が、剪定で収まることは少なくありません。反対に、残すには危険な状態の木もあります。どちらの場合も、木を見れば分かります。まずは写真一枚からでも、お気軽にご相談ください。</p>
+          <div class="cta-row">
+            <a class="cta line" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener noreferrer">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.55 7.4 8.32 8.05.32.07.77.22.88.5.1.26.07.66.03.93l-.14.84c-.04.26-.2 1.02.9.56 1.1-.47 5.93-3.46 8.08-5.91C21.55 12.74 22 11.47 22 10.13 22 5.64 17.52 2 12 2z"/></svg>
+              LINEで相談する <span class="small">写真を送るだけ</span>
+            </a>
+            <a class="cta tel" href="tel:+819020147439" aria-label="電話する（090-2014-7439へ発信します）">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              電話する
+            </a>
+          </div>
+          <p class="fineprint">LINEは友だち追加のうえ、庭木の写真とお困りの内容をお送りください。写真だけでも、大まかな見通しをお伝えできます。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span class="fbrand"><span class="brand">竜樹伐採</span></span>
+        <span>奈良市の高木伐採・特殊伐採・剪定</span>
+        <span style="white-space:nowrap">電話 090-2014-7439</span>
+        <span><a class="text-line-link" href="https://lin.ee/TZgVX8v" target="_blank" rel="noopener noreferrer">LINEで相談する</a></span>
+        <p>料金や対応時期は、木の種類と状態によって異なります。詳しくは現地確認のうえご案内いたします。</p>
+      </div>
+    </footer>
+
+    <script>
+      // 季節タブ
+      var seasons = {
+        spring: {
+          months: "3月 ― 5月",
+          title: "春 ― 芽が動き出す時期",
+          text: "松のミドリ摘みは、この時期の仕事です。伸び始めた新芽を整えることで、一年の枝の形の基礎が決まります。花の終わった花木の剪定も、花芽が作られる前に済ませます。",
+          list: ["松のミドリ摘み", "花の終わった花木（ツツジ・サツキなど）の剪定", "常緑樹の軽い透かし"]
+        },
+        summer: {
+          months: "6月 ― 8月",
+          title: "夏 ― 伸びを抑える時期",
+          text: "生垣の刈り込みや、伸びすぎた枝の整理に向く時期です。ただし真夏に大きく切り戻すと、木が体力を消耗します。大きな作業は秋以降に回し、この時期は軽い手入れにとどめるのが基本です。",
+          list: ["生垣・低木の刈り込み", "伸びすぎた枝の整理", "台風に備えた枯れ枝の点検"]
+        },
+        autumn: {
+          months: "9月 ― 11月",
+          title: "秋 ― 常緑樹と松の時期",
+          text: "常緑樹の剪定と、松の古葉取りに適した時期です。夏の間に伸びた分を整え、冬に向けて樹の中の風通しを良くします。台風で傷んだ枝の処置も、この時期に合わせて行えます。",
+          list: ["常緑樹の剪定・透かし", "松の古葉取り", "台風で傷んだ枝の処置"]
+        },
+        winter: {
+          months: "12月 ― 2月",
+          title: "冬 ― 落葉樹の時期",
+          text: "落葉樹の剪定は、葉が落ちたこの時期が基本です。枝の骨格が見えるため形を決めやすく、木が休んでいる時期ですので負担も小さくなります。樹形の立て直しのような大きな作業も、冬に行います。",
+          list: ["落葉樹（梅・柿・ケヤキなど）の剪定", "樹形の立て直し", "大きくなりすぎた木の切り戻し"]
+        }
+      };
+      var tabs = document.querySelectorAll(".season-tabs button");
+      var monthsEl = document.getElementById("season-months");
+      var titleEl = document.getElementById("season-title");
+      var textEl = document.getElementById("season-text");
+      var listEl = document.getElementById("season-list");
+      function showSeason(key){
+        var s = seasons[key];
+        if(!s) return;
+        monthsEl.textContent = s.months;
+        titleEl.textContent = s.title;
+        textEl.textContent = s.text;
+        listEl.innerHTML = "";
+        s.list.forEach(function(item){
+          var li = document.createElement("li");
+          li.textContent = item;
+          listEl.appendChild(li);
+        });
+        tabs.forEach(function(t){ t.setAttribute("aria-selected", t.getAttribute("data-season") === key ? "true" : "false"); });
+      }
+      tabs.forEach(function(t){
+        t.addEventListener("click", function(){ showSeason(t.getAttribute("data-season")); });
+      });
+      showSeason("spring");
+
+      // スクロールでふわりと出す
+      var revealEls = document.querySelectorAll(".reveal");
+      if("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+        var io = new IntersectionObserver(function(entries){
+          entries.forEach(function(e){
+            if(e.isIntersecting){ e.target.classList.add("on"); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.12 });
+        revealEls.forEach(function(el){ io.observe(el); });
+      } else {
+        revealEls.forEach(function(el){ el.classList.add("on"); });
+      }
+    </script>
+  </body>
+</html>
