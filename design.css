@@ -62,3 +62,14 @@ p{ text-wrap:wrap; line-break:strict; }
 .contact-result:focus{outline:none}
 .contact-result:focus-visible{outline:3px solid var(--green);outline-offset:4px}
 .services-note{max-width:1120px;margin:0 auto;padding:0 max(24px,calc((100vw - var(--max))/2)) 8px;color:var(--muted);font-size:14px}
+
+/* 三つの仕事（章ページへの入口） */
+.chapter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.chapter-card a{display:block;text-decoration:none;color:inherit}
+.chapter-card figure{margin:0;border-radius:var(--radius);overflow:hidden}
+.chapter-card img{width:100%;height:auto;display:block}
+.chapter-card-body{padding-top:16px}
+.chapter-no{color:var(--green);font-weight:700;font-size:13px;letter-spacing:.08em;margin:0 0 6px}
+.chapter-card h3{margin:0 0 8px;font-size:22px}
+.chapter-card-body p:last-child{margin:0;color:var(--muted);line-height:1.8}
+@media(max-width:760px){.chapter-grid{grid-template-columns:1fr}}

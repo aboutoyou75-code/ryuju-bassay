@@ -1,6 +1,6 @@
 # 竜樹伐採（Ryuju Bassai）
 
-> 奈良市を拠点に、奈良県内と木津川市・精華町で高木伐採・危険木伐採・空き家の庭木整理を行う伐採業者です。代表は竹下竜生。受付は9:00〜17:00、電話 090-2014-7439、LINE（https://lin.ee/thISnveh）とメール（ryuzyuchop@gmail.com）でも相談できます。写真を送っていただければ概算見積もりが可能です。
+> 奈良市を拠点に、奈良県内と木津川市・精華町で高木伐採・危険木伐採・空き家の庭木整理を行う伐採業者です。代表は竹下竜生。受付は9:00〜17:00、電話 090-2014-7439、LINE（https://lin.ee/TZgVX8v）とメール（ryuzyuchop@gmail.com）でも相談できます。写真を送っていただければ概算見積もりが可能です。
 
 ## 基本情報
 
@@ -10,7 +10,7 @@
 - 受付時間：9:00〜17:00
 - 電話：090-2014-7439
 - メール：ryuzyuchop@gmail.com
-- LINE：https://lin.ee/thISnveh
+- LINE：https://lin.ee/TZgVX8v
 - 公式サイト：https://ryujubassai.com/
 - ミツモア公開プロフィール：https://meetsmore.com/p/aTNuf45eAxRLn7ID（口コミ9件・評価5.0、2026年11月時点）
 - Instagram：https://www.instagram.com/ryu_sorashi/（日々の作業記録を公開）
@@ -28,6 +28,9 @@
 ## 主要ページ
 
 - [トップページ](https://ryujubassai.com/)：事業概要と相談導線
+- [特殊伐採 ― 空](https://ryujubassai.com/special-felling/)：倒す場所のない木をロープで切り下ろす特殊伐採の案内
+- [剪定 ― 生](https://ryujubassai.com/tree-pruning/)：木を残すための剪定の考え方・時期・料金の決め方
+- [伐採 ― 終](https://ryujubassai.com/tree-felling/)：伐採の段取りと料金の目安
 - [料金の目安](https://ryujubassai.com/nara-tree-removal-cost/)：作業別の料金表
 - [奈良の伐採業者の選び方](https://ryujubassai.com/nara-tree-removal-recommend/)：後悔しないチェックポイント6つと竜樹伐採のご案内
 - [施工事例](https://ryujubassai.com/works/)：Instagramに投稿してきた実際の伐採・剪定作業の記録（写真9件・動画5件）

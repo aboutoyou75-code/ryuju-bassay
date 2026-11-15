@@ -1,7 +1,7 @@
 const SITE_CONFIG = {
   // 変更する際はHTML側のフォールバックURLも同時に更新してください。
   phone: "090-2014-7439",
-  lineUrl: "https://lin.ee/thISnveh",
+  lineUrl: "https://lin.ee/TZgVX8v",
   email: "ryuzyuchop@gmail.com"
 };
 
