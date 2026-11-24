@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ryujubassai.com/</loc></url>
-  <url><loc>https://ryujubassai.com/special-felling/</loc></url>
-  <url><loc>https://ryujubassai.com/tree-pruning/</loc></url>
+  <url><loc>https://ryujubassai.com/special-felling/</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url><loc>https://ryujubassai.com/tree-pruning/</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
   <url><loc>https://ryujubassai.com/tree-felling/</loc></url>
   <url><loc>https://ryujubassai.com/nara-garden-tree-removal/</loc></url>
   <url><loc>https://ryujubassai.com/nara-tall-tree-removal/</loc></url>
@@ -14,7 +18,9 @@
   <url><loc>https://ryujubassai.com/tree-falling-neighbor/</loc></url>
   <url><loc>https://ryujubassai.com/tree-touching-power-lines/</loc></url>
   <url><loc>https://ryujubassai.com/nara-tree-removal-cost/</loc></url>
-  <url><loc>https://ryujubassai.com/works/</loc></url>
+  <url><loc>https://ryujubassai.com/works/</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>
   <url><loc>https://ryujubassai.com/guides/</loc></url>
   <url><loc>https://ryujubassai.com/guides/photo-estimate/</loc></url>
   <url><loc>https://ryujubassai.com/guides/tree-disposal/</loc></url>
